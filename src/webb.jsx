@@ -44,7 +44,7 @@ const DestinationSection = ({ title, destinations }) => (
 
 const destinationsByCountry = 
   {Dubai: [{
-    image: "./images/singapore01.jpg",
+    image: "./images/singapore01.JPG",
     days: "5 days & 4 nights",
     rating: "5.0",
     reviews: "1.2k",
@@ -55,7 +55,7 @@ const destinationsByCountry =
     discount: "SAVE INR 56,211",
   },
   {
-    image: "./images/singapore02.jpg",
+    image: "./images/singapore02.JPG",
     days: "7 days & 6 nights",
     rating: "4.9",
     reviews: "1.6k",
@@ -66,7 +66,7 @@ const destinationsByCountry =
     discount: "SAVE INR 25,836",
   },
   {
-    image: "./images/singapore03.jpg",
+    image: "./images/singapore03.JPG",
     days: "6 days & 5 nights",
     rating: "4.8",
     reviews: "425",
@@ -78,7 +78,7 @@ const destinationsByCountry =
   }],
   Singapoore:
   [{
-    "image": "https://via.placeholder.com/300",
+    "image": "./images/dubai01.JPG",
     "days": "7 days & 6 nights",
     "rating": "5.0",
     "reviews": "512",
@@ -89,7 +89,7 @@ const destinationsByCountry =
     "discount": "SAVE INR 29,616"
   },
   {
-    "image": "https://via.placeholder.com/300",
+    "image": "./images/dubai02.JPG",
     "days": "5 days & 4 nights",
     "rating": "4.9",
     "reviews": "407",
@@ -100,7 +100,7 @@ const destinationsByCountry =
     "discount": "SAVE INR 33,945"
   },
   {
-    "image": "https://via.placeholder.com/300",
+    "image": "./images/dubai03.JPG",
     "days": "7 days & 6 nights",
     "rating": "4.8",
     "reviews": "146",
@@ -112,7 +112,7 @@ const destinationsByCountry =
   }],
   
     Thai:[{
-    "image": "https://via.placeholder.com/300",
+    "image": "./images/thai01.JPG",
     "days": "8 days & 7 nights",
     "rating": "4.8",
     "reviews": "2.1K",
@@ -123,7 +123,7 @@ const destinationsByCountry =
     "discount": "SAVE INR 38,071"
   },
   {
-    "image": "https://via.placeholder.com/300",
+    "image": "./images/thai02.JPG",
     "days": "8 days & 7 nights",
     "rating": "4.7",
     "reviews": "1.8K",
@@ -134,7 +134,7 @@ const destinationsByCountry =
     "discount": "SAVE INR 10,700"
   },
   {
-    "image": "https://via.placeholder.com/300",
+    "image": "./images/thai03.JPG",
     "days": "6 days & 5 nights",
     "rating": "5.0",
     "reviews": "1.1K",
@@ -145,7 +145,7 @@ const destinationsByCountry =
     "discount": "SAVE INR 43,483"
   }],
    Bhutan: 
-    [{"image": "https://via.placeholder.com/300",
+    [{"image": "./images/bhu01.JPG",
     "days": "7 days & 6 nights",
     "rating": "4.5",
     "reviews": "30",
@@ -156,7 +156,7 @@ const destinationsByCountry =
     "discount": "SAVE INR 17,950"
   },
   {
-    "image": "https://via.placeholder.com/300",
+    "image": "./images/bhu02.JPG",
     "days": "6 days & 5 nights",
     "rating": "5.0",
     "reviews": "200",
@@ -167,7 +167,7 @@ const destinationsByCountry =
     "discount": "SAVE INR 13,009"
   },
   {
-    "image": "https://via.placeholder.com/300",
+    "image": "./images/bhu03.JPG",
     "days": "8 days & 7 nights",
     "rating": "4.5",
     "reviews": "39",
@@ -179,7 +179,7 @@ const destinationsByCountry =
   }],
    Bali: 
   [{
-    "image": "https://via.placeholder.com/300",
+    "image": "./images/bali01.JPG",
     "days": "6 days & 5 nights",
     "rating": "4.8",
     "reviews": "925",
@@ -190,7 +190,7 @@ const destinationsByCountry =
     "discount": "SAVE INR 20,912"
   },
   {
-    "image": "https://via.placeholder.com/300",
+    "image": "./images/bali02.JPG",
     "days": "5 days & 4 nights",
     "rating": "4.8",
     "reviews": "742",
@@ -201,7 +201,7 @@ const destinationsByCountry =
     "discount": "SAVE INR 13,900"
   },
   {
-    "image": "https://via.placeholder.com/300",
+    "image": "./images/bali03.JPG",
     "days": "6 days & 5 nights",
     "rating": "4.7",
     "reviews": "906",
@@ -213,7 +213,7 @@ const destinationsByCountry =
   }],
    USA:
   [{
-    "image": "https://via.placeholder.com/300",
+    "image": "./images/usa01.JPG",
     "days": "13 days & 12 nights",
     "rating": "5.0",
     "reviews": "125",
@@ -224,7 +224,7 @@ const destinationsByCountry =
     "discount": "SAVE INR 90,000"
   },
   {
-    "image": "https://via.placeholder.com/300",
+    "image": "./images/usa02.JPG",
     "days": "7 days & 6 nights",
     "rating": "5.0",
     "reviews": "115",
@@ -235,7 +235,7 @@ const destinationsByCountry =
     "discount": "SAVE INR 54,490"
   },
   {
-    "image": "https://via.placeholder.com/300",
+    "image": "./images/usa03.JPG",
     "days": "7 days & 6 nights",
     "rating": "5.0",
     "reviews": "121",
