@@ -44,7 +44,7 @@ const DestinationSection = ({ title, destinations }) => (
 
 const destinationsByCountry = 
   {Dubai: [{
-    image: "https://via.placeholder.com/300",
+    image: "./images/singapore01.jpg",
     days: "5 days & 4 nights",
     rating: "5.0",
     reviews: "1.2k",
@@ -55,7 +55,7 @@ const destinationsByCountry =
     discount: "SAVE INR 56,211",
   },
   {
-    image: "https://via.placeholder.com/300",
+    image: "./images/singapore02.jpg",
     days: "7 days & 6 nights",
     rating: "4.9",
     reviews: "1.6k",
@@ -66,7 +66,7 @@ const destinationsByCountry =
     discount: "SAVE INR 25,836",
   },
   {
-    image: "https://via.placeholder.com/300",
+    image: "./images/singapore03.jpg",
     days: "6 days & 5 nights",
     rating: "4.8",
     reviews: "425",
@@ -251,7 +251,7 @@ const ThrillophiliaClone = () => {
     <div className="w-full bg-white">
       {/* Header */}
       <header className="flex items-center justify-between p-4 border-b">
-        <img src="./images/logo.jpg" />
+        <img src="./images/logo.jpg" className="w-32 h-32" />
         <div className="relative w-1/3">
           <input
             type="text"
