@@ -4,6 +4,7 @@ import { AiFillFire } from "react-icons/ai";
 import { FaStar } from "react-icons/fa";
 import Navbar from "./components/ui/navbar";
 import Header from "./components/ui/header";
+import ImageSlider from "./slider";
 
 const activities = [
   {
@@ -72,8 +73,9 @@ const ActivityCard = ({ activity }) => {
 
 const ThingsToDoInDubai = () => {
   return (
-    <>
+    <Box sx={{display: "flex", pasition:"relative", justifyContent: "flex-start", flexDirection: "column", alignItems: "flex-start"}}>
     <Header />
+    <ImageSlider  />
     <Box className="container w-1000 px-4 py-8" sx={{display: "flex", flexDirection: "column", justifyContent: "flex-start", alignItems: "flex-start"}}>
       <Typography variant="h5" className="mb-5 font-bold flex items-center gap-2" sx={{fontWeight: 600, fontSize: "20px", color: "grey"}}>
          Things to Do in Dubai
@@ -85,7 +87,7 @@ const ThingsToDoInDubai = () => {
         <ActivityCard key={index} activity={activity} />
       ))}
     </Box>
-    </>
+    </Box>
   );
 };
 

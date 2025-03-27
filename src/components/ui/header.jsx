@@ -4,8 +4,8 @@ import { Button } from '@mui/material'
 
 export default function Header() {
   return (
-    <header className="flex items-center justify-between p-4 border-b">
-            <img src="./images/logo.jpg" className="w-32 h-32" />
+    <header className="flex absolute top-0 left-0 bg-opacity-50 z-10 w-screen items-center justify-between p-4 border-b ">
+            <img src="./images/logo.jpg" className="w-20 h-20" />
             <div className="relative w-1/3">
               <input
                 type="text"

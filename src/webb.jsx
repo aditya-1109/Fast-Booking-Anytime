@@ -260,7 +260,7 @@ const ThrillophiliaClone = () => {
       <Header />
       
 
-      <MenuBar />
+      <MenuBar  />
 
       <div>
       {Object.entries(destinationsByCountry).map(([country, destinations]) => (
