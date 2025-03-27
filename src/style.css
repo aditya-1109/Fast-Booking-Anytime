@@ -67,3 +67,8 @@ footer {
     color: #fff;
     margin-top: 20px;
 }
+
+.scroller{
+    background-image: url(../public/images/dubai01.JPG);
+    background-size: cover;
+}

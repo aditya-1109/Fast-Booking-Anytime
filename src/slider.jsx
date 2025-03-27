@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { Button } from "@mui/material";
 import { ArrowBackIos, ArrowForwardIos } from "@mui/icons-material";
 
-
 const slides = [
   {
     image: "./images/dubai01.JPG", 
@@ -42,15 +41,15 @@ const ImageSlider = () => {
   return (
     <div className="relative w-screen h-screen">
       
-      <div
-        className="w-full h-full bg-cover bg-center bg-[url('./images/dubai01.JPG')] transition-all duration-700"
-    
-      >
+      <div className="w-full h-full bg-cover bg-center transition-all duration-700" style={{backgroundImage: `url(${slides[currentIndex].image})`}}>
+
+      
         {/* Overlay */}
-        <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center text-center text-white px-6">
+        <div className="absolute inset-0 bg-[rgba(0,0,0,0.3)] flex flex-col items-center justify-center text-center text-white px-6">
           <h2 className="text-4xl md:text-5xl font-bold">
             {slides[currentIndex].title}
           </h2>
+        
           <p className="mt-2 text-lg md:text-xl">
             Get up to{" "}
             <span className="bg-yellow-400 text-black px-2 py-1 rounded">
