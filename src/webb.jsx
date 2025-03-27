@@ -3,12 +3,17 @@ import { FaSearch, FaStar, FaPhoneAlt } from "react-icons/fa";
 import { Button } from "@mui/material";
 import MenuBar from "./components/ui/menu";
 import Footer from "./footer";
+import Header from "./components/ui/header";
+import { useNavigate } from "react-router-dom";
 
-const DestinationSection = ({ title, destinations }) => (
+
+const DestinationSection = ({ title, destinations, navigate }) => (
+
+  
   <section className="p-6">
     <div className="flex justify-between items-center">
       <h2 className="text-2xl font-semibold">{title}</h2>
-      <Button variant="text" color="warning">View All ➜</Button>
+      <Button variant="text" onClick={()=>navigate("/view")} color="warning">View All ➜</Button>
     </div>
     <div className="grid grid-cols-3 gap-4 mt-4">
       {destinations.map((dest, index) => (
@@ -247,32 +252,19 @@ const destinationsByCountry =
   }]};
 
 const ThrillophiliaClone = () => {
+
+  const navigate=useNavigate();
+
   return (
     <div className="w-full bg-white">
-      {/* Header */}
-      <header className="flex items-center justify-between p-4 border-b">
-        <img src="./images/logo.jpg" className="w-32 h-32" />
-        <div className="relative w-1/3">
-          <input
-            type="text"
-            placeholder="Search for Bali"
-            className="w-full p-2 pl-10 border rounded-full"
-          />
-          <FaSearch className="absolute left-3 top-3 text-gray-400" />
-        </div>
-        <div className="flex gap-4 items-center">
-          <span className="text-sm">INR ₹</span>
-          <Button variant="outlined" color="warning">
-            Login
-          </Button>
-        </div>
-      </header>
+      <Header />
+      
 
       <MenuBar />
 
       <div>
       {Object.entries(destinationsByCountry).map(([country, destinations]) => (
-        <DestinationSection key={country} title={country} destinations={destinations} />
+        <DestinationSection key={country} title={country} destinations={destinations} navigate={navigate} />
       ))}
     </div>
 
