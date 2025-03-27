@@ -43,7 +43,7 @@ const ImageSlider = () => {
     <div className="relative w-screen h-screen">
       
       <div
-        className="w-full h-full bg-cover bg-center bg-[url('./images/dubai02.JPG')] transition-all duration-700"
+        className="w-full h-full bg-cover bg-center bg-[url('./images/dubai01.JPG')] transition-all duration-700"
     
       >
         {/* Overlay */}
@@ -77,13 +77,13 @@ const ImageSlider = () => {
 
       {/* Navigation Buttons */}
       <button
-        className="absolute left-5 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-3 rounded-full"
+        className="absolute left-5 top-1/2 transform -translate-y-1/2 bg-gray-800 bg-opacity-20 text-white p-3 rounded-full"
         onClick={prevSlide}
       >
         <ArrowBackIos />
       </button>
       <button
-        className="absolute right-5 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-3 rounded-full"
+        className="absolute right-5 top-1/2 transform -translate-y-1/2 bg-gray-800 bg-opacity-20 text-white p-3 rounded-full"
         onClick={nextSlide}
       >
         <ArrowForwardIos />
