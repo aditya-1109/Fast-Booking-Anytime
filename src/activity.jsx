@@ -73,7 +73,7 @@ const ActivityCard = ({ activity }) => {
 
 const ThingsToDoInDubai = () => {
   return (
-    <Box sx={{display: "flex", pasition:"relative", justifyContent: "flex-start", flexDirection: "column", alignItems: "flex-start"}}>
+    <Box sx={{display: "flex", position:"relative", justifyContent: "flex-start", flexDirection: "column", alignItems: "flex-start"}}>
     <Header />
     <ImageSlider  />
     <Box className="container w-1000 px-4 py-8" sx={{display: "flex", flexDirection: "column", justifyContent: "flex-start", alignItems: "flex-start"}}>
