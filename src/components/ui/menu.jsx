@@ -1,16 +1,19 @@
 import React from "react";
 import { Button } from "@mui/material";
+import { useNavigate } from "react-router-dom";
 
 const destinations = [
   { name: "Dubai", trending: true },
-  { name: "Singapore", trending: false },
-  { name: "North East India", trending: false },
+  { name: "Singapoore", trending: false },
+  { name: "Bali", trending: false },
+  { name: "Bhutan", trending: false },
   { name: "Thailand", trending: false },
-  { name: "Kashmir", trending: false },
-  { name: "Switzerland", trending: true },
+  { name: "USA", trending: true },
 ];
 
 const MenuBar = () => {
+
+  const navigate= useNavigate();
   return (
     <div className="w-full bg-white shadow-sm border-b flex items-center mt-20 justify-between px-6 py-3">
       {/* Explore Section */}
@@ -21,7 +24,7 @@ const MenuBar = () => {
 
         {/* Destinations */}
         {destinations.map((dest, index) => (
-          <span key={index} className="flex items-center gap-1 cursor-pointer hover:text-orange-500">
+          <span key={index} onClick={()=>navigate(`/country/${dest.name}`)} className="flex items-center gap-1 cursor-pointer hover:text-orange-500">
             {dest.name}
             {dest.trending && (
               <span className="bg-orange-500 text-white text-xs px-2 py-0.5 rounded-md">Trending</span>

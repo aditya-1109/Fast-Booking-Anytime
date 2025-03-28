@@ -1,13 +1,13 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { FaSearch, FaStar, FaPhoneAlt } from "react-icons/fa";
 import { Button } from "@mui/material";
 import MenuBar from "./components/ui/menu";
 import Footer from "./footer";
 import Header from "./components/ui/header";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 
 
-const DestinationSection = ({ title, destinations, navigate }) => (
+const DestinationSection = ({ title, destinations, navigate , call, whatsapp}) => (
 
   
   <section className="p-6">
@@ -36,8 +36,8 @@ const DestinationSection = ({ title, destinations, navigate }) => (
 
             {/* Call and Callback Buttons */}
             <div className="flex gap-3 mt-3">
-              <Button variant="outlined" startIcon={<FaPhoneAlt />} color="warning">Call</Button>
-              <Button variant="contained" color="warning">Request Callback</Button>
+              <Button variant="outlined" onClick={call} startIcon={<FaPhoneAlt />} color="warning">Call</Button>
+              <Button variant="contained" onClick={whatsapp} color="warning">Request Callback</Button>
             </div>
           </div>
         </div>
@@ -47,7 +47,7 @@ const DestinationSection = ({ title, destinations, navigate }) => (
 );
 
 
-const destinationsByCountry = 
+let destinationsByCountry = 
   {Dubai: [{
     image: "./images/singapore01.JPG",
     days: "5 days & 4 nights",
@@ -116,7 +116,7 @@ const destinationsByCountry =
     "discount": "SAVE INR 39,829"
   }],
   
-    Thai:[{
+    Thailand:[{
     "image": "./images/thai01.JPG",
     "days": "8 days & 7 nights",
     "rating": "4.8",
@@ -255,6 +255,30 @@ const ThrillophiliaClone = () => {
 
   const navigate=useNavigate();
 
+  const {countryName}= useParams();
+
+  const [filteredDestinations, setFilteredDestinations] = useState(destinationsByCountry);
+
+  const phoneNumber = "+919899997587"; // Replace with your phone number
+const whatsappMessage = "Hello, I would like to request a callback.";
+
+const handleCall = () => {
+  window.location.href = `tel:${phoneNumber}`;
+};
+
+const handleRequestCallback = () => {
+  const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+  window.open(whatsappURL, "_blank");
+};
+
+  useEffect(() => {
+    if (countryName) {
+      setFilteredDestinations({ [countryName]: destinationsByCountry[countryName] || [] });
+    } else {
+      setFilteredDestinations(destinationsByCountry);
+    }
+  }, [countryName, destinationsByCountry]);
+
   return (
     <div className="w-full bg-white">
       <Header />
@@ -263,8 +287,8 @@ const ThrillophiliaClone = () => {
       <MenuBar  />
 
       <div>
-      {Object.entries(destinationsByCountry).map(([country, destinations]) => (
-        <DestinationSection key={country} title={country} destinations={destinations} navigate={navigate} />
+      {Object.entries(filteredDestinations).map(([country, destinations]) => (
+        <DestinationSection key={country} title={country} destinations={destinations} navigate={navigate} call={handleCall} whatsapp={handleRequestCallback} />
       ))}
     </div>
 

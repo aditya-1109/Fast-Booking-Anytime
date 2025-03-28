@@ -8,6 +8,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<ThrillophiliaClone />} />
+        <Route path="/country/:countryName" element={<ThrillophiliaClone />} />
         <Route path="/view" element={<ThingsToDoInDubai />} />
       </Routes>
     </Router>
