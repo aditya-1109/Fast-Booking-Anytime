@@ -4,7 +4,7 @@ import { Button } from '@mui/material'
 
 export default function Header() {
   return (
-    <header className="flex absolute top-0 left-0 bg-opacity-50 z-10 w-screen items-center justify-between p-4 border-b ">
+    <header className="flex absolute top-0 left-0 bg-opacity-50 z-10 w-screen items-center justify-around py-2  ">
             <img src="./images/logo.jpg" className="w-20 h-20" />
             <div className="relative w-1/3">
               <input
@@ -20,6 +20,6 @@ export default function Header() {
                 Login
               </Button>
             </div>
-          </header>
+    </header>
   )
 }

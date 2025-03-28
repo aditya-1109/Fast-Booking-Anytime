@@ -4,14 +4,14 @@ import { ArrowBackIos, ArrowForwardIos } from "@mui/icons-material";
 
 const slides = [
   {
-    image: "./images/dubai01.JPG", 
+    image: "./images/dubai04.jpg", 
     title: "Things to do in DUBAI",
     discount: "40% off",
     price: "INR 560",
     oldPrice: "INR 1120",
   },
   {
-    image: "./images/dubai02.JPG",
+    image: "./images/dubai05.jpg",
     title: "Explore the Wonders",
     discount: "30% off",
     price: "INR 700",
