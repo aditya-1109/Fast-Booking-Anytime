@@ -4,7 +4,7 @@ import { Facebook, Instagram, Twitter, LinkedIn, YouTube } from "@mui/icons-mate
 
 const Footer = () => {
   return (
-    <Box className="bg-gray-900 text-white py-10 px-5" sx={{display: "flex", justifyContent: "center", flexDirection: "column", alignItems: "center"}}>
+    <Box className="bg-gray-900 text-white py-10 mt-40 px-5" sx={{display: "flex", justifyContent: "center", flexDirection: "column", alignItems: "center"}}>
       {/* Top Footer Sections */}
       <Grid container spacing={4} className="max-w-5xl" sx={{backgroundColor: "white", padding:"50px", borderRadius: "20px", marginTop: "-150px", border: "solid grey 1px", boxShadow: "5 5 20 10 grey"}}>
         {/* About Section */}

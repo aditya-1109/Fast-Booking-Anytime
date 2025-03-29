@@ -18,7 +18,7 @@ const DestinationSection = ({ title, destinations, navigate , call, whatsapp}) =
     <div className="grid grid-cols-3 gap-4 mt-4">
       {destinations.map((dest, index) => (
         <div key={index} className="border rounded-lg overflow-hidden shadow-sm">
-          <img src={dest.image} alt={dest.title} className="w-full h-48 object-cover" />
+          <img src={dest.image} alt={dest.title} onClick={()=>navigate(`/pic/${dest.title}`)} className="w-full h-48 object-cover" />
           <div className="p-4">
             <p className="text-gray-500 text-sm">{dest.days}</p>
             <div className="flex items-center gap-1 text-green-600 text-sm">
