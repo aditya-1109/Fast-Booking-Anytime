@@ -189,7 +189,7 @@ const ThingsToDoInDubai = () => {
   };
 
   const {country}= useParams();
-  console.log(country);
+  
   return (
     <Box sx={{display: "flex", position:"absolute", justifyContent: "flex-start", width:"100vw", left: 0, top:0, flexDirection: "column", alignItems: "flex-start"}}>
     <Header />
