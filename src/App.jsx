@@ -10,8 +10,8 @@ function App() {
       <Routes>
         <Route path="/" element={<ThrillophiliaClone />} />
         <Route path="/country/:countryName" element={<ThrillophiliaClone />} />
-        <Route path="/view" element={<ThingsToDoInDubai />} />
-        <Route path='/pic/:tittle' element={<DubaiTourCard />} />
+        <Route path="/view/:country" element={<ThingsToDoInDubai />} />
+        <Route path='/pic/:tittle/:country' element={<DubaiTourCard />} />
       </Routes>
     </Router>
   );

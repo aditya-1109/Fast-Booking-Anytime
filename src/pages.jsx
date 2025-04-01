@@ -1,50 +1,45 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Button, Rating, Select, MenuItem, Tabs, Tab, Accordion, AccordionSummary, AccordionDetails } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { FaPlaneDeparture } from "react-icons/fa";
 import { useParams } from "react-router-dom";
-import DubaiTrip from "./components/ui/trip";
-import PackageDetails from "./components/ui/detail";
 import Footer from "./footer";
 import Header from "./components/ui/header";
+import { ChevronLeft, ChevronRight } from "lucide-react";
+import { pagesData } from "./data";
 
 const DubaiTourPage = () => {
-  const { title } = useParams();
-  console.log(title);
+  const { tittle , country} = useParams();
+  console.log(tittle,country);
 
   // States
   const [selectedDuration, setSelectedDuration] = useState(5);
   const [selectedStay, setSelectedStay] = useState("Standard");
   const [tabValue, setTabValue] = useState(0);
+    const [selectedTab, setSelectedTab] = useState(0);
+    const [currentImage, setCurrentImage] = useState(0);
+    const [dataa, setData]= useState("");
+    
+    
+    useEffect(()=>{
+      setData(pagesData[country])
+    },[country])
+  
+    const handleTabChange = (_, newValue) => setSelectedTab(newValue);
+    const prevImage = () => setCurrentImage((prev) => (prev === 0 ? dataa.tittle?.belowImages.length - 1 : prev - 1));
+    const nextImage = () => setCurrentImage((prev) => (prev === dataa.tittle?.belowImages.length - 1 ? 0 : prev + 1));
 
-  // Trip durations & prices
-  const tripDurations = [
-    { days: 3, price: 33309 },
-    { days: 4, price: 37950 },
-    { days: 5, price: 68550 },
-    { days: 6, price: 40930 },
-    { days: 7, price: 57999 },
-  ];
-
-  const itinerary = [
-    { day: "Day 1", title: "Arrival in Dubai" },
-    { day: "Day 2", title: "Marina Dhow Dinner Cruise Tour" },
-    { day: "Day 3", title: "Dubai Sightseeing Tour | Dubai Desert Safari" },
-    { day: "Day 4", title: "Visit to Burj Khalifa" },
-    { day: "Day 5", title: "Departure Day" },
-  ];
-
+    
   return (
     <>
     <Header />
     <div className="relative w-full mx-auto mt-10 p-4 shadow-lg rounded-lg bg-white">
-        
-      {/* Main Image & Thumbnails */}
+      
       <div className="grid grid-cols-2 gap-4">
-        <img src="/images/dubai04.jpg" alt="Dubai" className="rounded-lg w-full h-96 object-cover" />
+        <img src={dataa[tittle]?.images[0]} alt="Dubai" className="rounded-lg w-full h-96 object-cover" />
         <div className="grid grid-rows-2 gap-2">
-          <img src="/images/dubai03.JPG" alt="Dubai Night" className="rounded-lg w-full h-48 object-cover" />
-          <img src="/images/dubai05.jpg" alt="Dubai Hotel" className="rounded-lg w-full h-48 object-cover" />
+          <img src={dataa[tittle]?.images[1]} alt="Dubai Night" className="rounded-lg w-full h-48 object-cover" />
+          <img src={dataa[tittle]?.images[2]} alt="Dubai Hotel" className="rounded-lg w-full h-48 object-cover" />
         </div>
       </div>
 
@@ -62,7 +57,7 @@ const DubaiTourPage = () => {
       {/* Trip Duration Selection */}
       <h3 className="mt-4 text-lg font-semibold">Choose Trip Duration</h3>
       <div className="flex space-x-3 mt-2">
-        {tripDurations.map((trip) => (
+        {dataa[tittle]?.tripDurations.map((trip) => (
           <button
             key={trip.days}
             className={`px-3 py-2 rounded-md border ${selectedDuration === trip.days ? "bg-orange-500 text-white" : "bg-gray-100"}`}
@@ -96,7 +91,7 @@ const DubaiTourPage = () => {
       {/* Price & Booking */}
       <div className="flex justify-between items-center mt-4">
         <p className="text-lg font-semibold text-green-600">
-          INR {tripDurations.find((trip) => trip.days === selectedDuration)?.price} <span className="line-through text-gray-400 text-sm">INR 1,24,761</span>
+          INR {dataa[tittle]?.tripDurations.find((trip) => trip.days === selectedDuration)?.price} <span className="line-through text-gray-400 text-sm">INR 1,24,761</span>
         </p>
         <Rating value={4.8} precision={0.1} readOnly /> <span className="text-gray-600">(46.5k)</span>
         <Button variant="contained" color="warning" className="bg-orange-500 text-white">Send Enquiry</Button>
@@ -112,11 +107,39 @@ const DubaiTourPage = () => {
         <Tab label="Transfers" />
       </Tabs>
 
-      <DubaiTrip />
+      <div className="w-full mx-auto p-6 bg-white rounded-xl shadow-lg justify-start items-start">
+            <h2 className="text-2xl font-bold mb-4">Trip Highlights</h2>
+            {dataa[tittle]?.trip.map((trips, index)=>(<ul className="list-disc pl-0 space-y-2 text-gray-700">
+              <li key={index}>{trips}</li>
+            </ul>))}
+            
+            <Tabs value={selectedTab} onChange={handleTabChange} className="mt-6">
+              <Tab label="Itinerary" />
+              <Tab label="Summarised View" />
+              <Tab label="Activities" />
+              <Tab label="Flights" />
+              <Tab label="Stay" />
+              <Tab label="Transfers" />
+            </Tabs>
+      
+            <div className="relative mt-6">
+              <img
+                src={dataa[tittle]?.belowImages[currentImage]}
+                alt="Dubai"
+                className="w-full h-64 object-cover rounded-lg shadow-md"
+              />
+              <button onClick={prevImage} className="absolute left-4 top-1/2 -translate-y-1/2 bg-white p-2 rounded-full shadow-md">
+                <ChevronLeft />
+              </button>
+              <button onClick={nextImage} className="absolute right-4 top-1/2 -translate-y-1/2 bg-white p-2 rounded-full shadow-md">
+                <ChevronRight />
+              </button>
+            </div>
+          </div>
       {/* Itinerary Section */}
       {tabValue === 0 && (
         <div className="mt-6">
-          {itinerary.map((item, index) => (
+          {dataa[tittle]?.itinerary.map((item, index) => (
             <Accordion key={index} className="mb-4 bg-white shadow-md">
               <AccordionSummary expandIcon={<ExpandMoreIcon />} className="font-bold">
                 <span className="text-orange-500 px-4 py-2 rounded-full bg-orange-100 mr-2">{item.day}</span>
@@ -130,7 +153,31 @@ const DubaiTourPage = () => {
           <h2 className="text-center text-2xl font-bold text-orange-500 mt-6">End Of Trip</h2>
         </div>
       )}
-      <PackageDetails />
+      <div className="relative p-6 bg-white w-full shadow-lg rounded-lg">
+      <h2 className="text-2xl font-semibold mb-4">What’s inside the package?</h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div>
+          <h3 className="text-xl font-semibold mb-2">Inclusions ✅</h3>
+          <ul className="list-none space-y-2">
+            {dataa[tittle]?.inclusions.map((item, index) => (
+              <li key={index} className="flex items-center">
+                <span className="text-green-500 mr-2">✔</span> {item}
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div>
+          <h3 className="text-xl font-semibold mb-2">Exclusions ❌</h3>
+          <ul className="list-none space-y-2">
+            {dataa[tittle]?.exclusions.map((item, index) => (
+              <li key={index} className="flex items-center">
+                <span className="text-red-500 mr-2">✖</span> {item}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </div>
       <Footer className="mt-20"/>
     </div>
     </>
