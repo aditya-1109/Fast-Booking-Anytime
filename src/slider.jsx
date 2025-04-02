@@ -19,7 +19,7 @@ const slides = {
       oldPrice: "INR 1000",
     },
   ],
-  Singapore: [
+  Singapoore: [
     {
       image: "./images/singapore05.jpg",
       title: "Discover Singapore’s Marvels",
