@@ -82,7 +82,7 @@ export const pagesData={
       "images": [
       "/images/dubai06.jpg",
       "/images/dubai07.jpg",
-      "/images/dubai08.JPG"
+      "/images/dubai08.jpg"
     ],
     "inclusions": [
       "Flights included from Mumbai to Dubai",
@@ -107,9 +107,9 @@ export const pagesData={
       "Tourism Dirham Fee"
     ],
     "belowImages": [
-      "/images/dubai09.JPG",
-      "/images/dubai10.JPG",
-      "/images/dubai11.JPG"
+      "/images/dubai09.jpg",
+      "/images/dubai10.jpg",
+      "/images/dubai11.jpg"
     ],
     "tripDurations": [
       { "days": 5, "price": 72000 },
@@ -150,7 +150,7 @@ export const pagesData={
     "images": [
       "/images/dubai12.jpg",
       "/images/dubai13.jpg",
-      "/images/dubai14.JPG"
+      "/images/dubai11.jpg"
     ],
     "inclusions": [
       "Flights included from Bangalore to Dubai",
@@ -174,9 +174,9 @@ export const pagesData={
       "Tourism Dirham Fee"
     ],
     "belowImages": [
-      "/images/dubai15.JPG",
-      "/images/dubai16.JPG",
-      "/images/dubai17.JPG"
+      "/images/dubai01.JPG",
+      "/images/dubai02.JPG",
+      "/images/dubai03.JPG"
     ],
     "tripDurations": [
       { "days": 4, "price": 58000 },
@@ -216,7 +216,7 @@ export const pagesData={
         "images": [
       "/images/dubai06.jpg",
       "/images/dubai07.jpg",
-      "/images/dubai08.JPG"
+      "/images/dubai08.jpg"
     ],
     "inclusions": [
       "Flights included from Delhi to Dubai",
@@ -265,9 +265,9 @@ export const pagesData={
           "discount": "SAVE INR 57,940"
         },
         "images": [
-      "/images/dubai05_1.jpg",
-      "/images/dubai05_2.jpg",
-      "/images/dubai05_3.JPG"
+      "/images/dubai05.jpg",
+      "/images/dubai05.jpg",
+      "/images/dubai05.jpg"
     ],
     "inclusions": [
       "Flights included from Delhi to Dubai",
@@ -291,9 +291,9 @@ export const pagesData={
       "Visa Charges"
     ],
     "belowImages": [
-      "/images/dubai05_1.JPG",
-      "/images/dubai05_2.JPG",
-      "/images/dubai05_3.JPG"
+      "/images/dubai06.JPG",
+      "/images/dubai07.JPG",
+      "/images/dubai08.JPG"
     ],
     "tripDurations": [
       { "days": 5, "price": 52550 },
@@ -320,7 +320,7 @@ export const pagesData={
       },
       "dubai06": {
         "poster": {
-          "image": "./images/dubai06.JPG",
+          "image": "./images/dubai06.jpg",
           "days": "6 days & 5 nights",
           "rating": "4.7",
           "reviews": "447",
@@ -333,9 +333,9 @@ export const pagesData={
           "discount": "SAVE INR 22,440"
         },
         "images": [
-      "/images/dubai06_1.jpg",
-      "/images/dubai06_2.jpg",
-      "/images/dubai06_3.JPG"
+      "/images/dubai07.jpg",
+      "/images/dubai08.jpg",
+      "/images/dubai09.jpg"
     ],
     "inclusions": [
       "Flights included from Delhi to Dubai",
@@ -359,9 +359,9 @@ export const pagesData={
       "Visa Charges"
     ],
     "belowImages": [
-      "/images/dubai06_1.JPG",
-      "/images/dubai06_2.JPG",
-      "/images/dubai06_3.JPG"
+      "/images/dubai10.jpg",
+      "/images/dubai11.jpg",
+      "/images/dubai13.jpg"
     ],
     "tripDurations": [
       { "days": 4, "price": 50930 },
@@ -401,8 +401,8 @@ export const pagesData={
         "discount": "SAVE INR 29,616"
       },
       "images": [
-      "/images/singapore01.jpg",
-      "/images/singapore02.jpg",
+      "/images/singapore01.JPG",
+      "/images/singapore02.JPG",
       "/images/singapore03.JPG"
     ],
     "inclusions": [
@@ -424,9 +424,9 @@ export const pagesData={
       "Visa Charges"
     ],
     "belowImages": [
-      "/images/singapore04.JPG",
-      "/images/singapore05.JPG",
-      "/images/singapore06.JPG"
+      "/images/singapore04.jpg",
+      "/images/singapore05.jpg",
+      "/images/singapore06.jpg"
     ],
     "tripDurations": [
       { "days": 4, "price": 42950 },
@@ -467,7 +467,7 @@ export const pagesData={
       "images": [
       "/images/singapore07.jpg",
       "/images/singapore08.jpg",
-      "/images/singapore09.JPG"
+      "/images/singapore09.jpg"
     ],
     "inclusions": [
       "Flights included from Delhi to Singapore",
@@ -487,9 +487,9 @@ export const pagesData={
       "Visa Charges"
     ],
     "belowImages": [
-      "/images/singapore10.JPG",
-      "/images/singapore11.JPG",
-      "/images/singapore12.JPG"
+      "/images/singapore10.jpg",
+      "/images/singapore11.jpg",
+      "/images/singapore12.jpg"
     ],
     "tripDurations": [
       { "days": 3, "price": 35999 },
@@ -525,9 +525,9 @@ export const pagesData={
         "discount": "SAVE INR 39,829"
       },
       "images": [
-    "/images/singapore03_1.jpg",
-    "/images/singapore03_2.jpg",
-    "/images/singapore03_3.jpg"
+    "/images/singapore05.jpg",
+    "/images/singapore07.jpg",
+    "/images/singapore09.jpg"
   ],
   "inclusions": [
     "Flights included from Delhi to Singapore",
@@ -550,9 +550,9 @@ export const pagesData={
     "Visa Charges"
   ],
   "belowImages": [
-    "/images/singapore03_1.jpg",
-    "/images/singapore03_2.jpg",
-    "/images/singapore03_3.jpg"
+    "/images/singapore08.jpg",
+    "/images/singapore04.jpg",
+    "/images/singapore06.jpg"
   ],
   "tripDurations": [
     { "days": 3, "price": 22999 },
@@ -592,9 +592,9 @@ export const pagesData={
       "discount": "SAVE INR 20,350"
     },
     "images": [
-    "/images/singapore04_1.jpg",
-    "/images/singapore04_2.jpg",
-    "/images/singapore04_3.jpg"
+    "/images/singapore07.jpg",
+    "/images/singapore09.jpg",
+    "/images/singapore10.jpg"
   ],
   "inclusions": [
     "Flights included from Delhi to Singapore",
@@ -615,9 +615,9 @@ export const pagesData={
     "Visa Charges"
   ],
   "belowImages": [
-    "/images/singapore04_1.jpg",
-    "/images/singapore04_2.jpg",
-    "/images/singapore04_3.jpg"
+    "/images/singapore11.jpg",
+    "/images/singapore03.JPG",
+    "/images/singapore12.jpg"
   ],
   "tripDurations": [
     { "days": 3, "price": 23999 },
@@ -640,7 +640,7 @@ export const pagesData={
   },
   "singapore05": {
     "poster": {
-      "image": "./images/singapore02.JPG",
+      "image": "./images/singapore04.jpg",
       "days": "4 days & 3 nights",
       "rating": "4.9",
       "reviews": "353",
@@ -653,9 +653,9 @@ export const pagesData={
       "discount": "SAVE INR 14,000"
     },
     "images": [
-    "/images/singapore05_1.jpg",
-    "/images/singapore05_2.jpg",
-    "/images/singapore05_3.jpg"
+    "/images/singapore05.jpg",
+    "/images/singapore06.jpg",
+    "/images/singapore07.jpg"
   ],
   "inclusions": [
     "Flights included from Delhi to Singapore",
@@ -675,9 +675,9 @@ export const pagesData={
     "Visa Charges"
   ],
   "belowImages": [
-    "/images/singapore05_1.jpg",
-    "/images/singapore05_2.jpg",
-    "/images/singapore05_3.jpg"
+    "/images/singapore08.jpg",
+    "/images/singapore09.jpg",
+    "/images/singapore10.jpg"
   ],
   "tripDurations": [
     { "days": 3, "price": 20999 },
@@ -698,7 +698,7 @@ export const pagesData={
   },
   "singapore06": {
     "poster": {
-      "image": "./images/singapore03.JPG",
+      "image": "./images/singapore06.jpg",
       "days": "6 days & 5 nights",
       "rating": "4.5",
       "reviews": "149",
@@ -711,9 +711,9 @@ export const pagesData={
       "discount": "SAVE INR 22,100"
     },
     "images": [
-    "/images/singapore06_1.jpg",
-    "/images/singapore06_2.jpg",
-    "/images/singapore06_3.jpg"
+    "/images/singapore06.jpg",
+    "/images/singapore07.jpg",
+    "/images/singapore08.jpg"
   ],
   "inclusions": [
     "Flights included from Delhi to Singapore",
@@ -733,9 +733,9 @@ export const pagesData={
     "Visa Charges"
   ],
   "belowImages": [
-    "/images/singapore06_1.jpg",
-    "/images/singapore06_2.jpg",
-    "/images/singapore06_3.jpg"
+    "/images/singapore10.jpg",
+    "/images/singapore11.jpg",
+    "/images/singapore12.jpg"
   ],
   "tripDurations": [
     { "days": 4, "price": 35999 },
@@ -773,9 +773,9 @@ export const pagesData={
         "discount": "SAVE INR 38,071"
       },
       "images": [
-    "/images/thai01_1.jpg",
-    "/images/thai01_2.jpg",
-    "/images/thai01_3.jpg"
+    "/images/thai04.jpg",
+    "/images/thai05.jpg",
+    "/images/thai06.jpg"
   ],
   "inclusions": [
     "Flights included from Delhi to Bangkok and Phuket",
@@ -796,9 +796,9 @@ export const pagesData={
     "Visa Charges"
   ],
   "belowImages": [
-    "/images/thai01_1.jpg",
-    "/images/thai01_2.jpg",
-    "/images/thai01_3.jpg"
+    "/images/thai07.jpg",
+    "/images/thai08.jpg",
+    "/images/thai09.jpg"
   ],
   "tripDurations": [
     { "days": 7, "price": 34999 },
@@ -834,9 +834,9 @@ export const pagesData={
         "discount": "SAVE INR 10,700"
       },
       "images": [
-    "/images/thai02_1.jpg",
-    "/images/thai02_2.jpg",
-    "/images/thai02_3.jpg"
+    "/images/thai11.jpg",
+    "/images/thai12.jpg",
+    "/images/thai13.jpg"
   ],
   "inclusions": [
     "Flights included from Delhi to Pattaya and Phuket",
@@ -857,9 +857,9 @@ export const pagesData={
     "Visa Charges"
   ],
   "belowImages": [
-    "/images/thai02_1.jpg",
-    "/images/thai02_2.jpg",
-    "/images/thai02_3.jpg"
+    "/images/thai05.jpg",
+    "/images/thai07.jpg",
+    "/images/thai09.jpg"
   ],
   "tripDurations": [
     { "days": 7, "price": 41999 },
@@ -896,9 +896,9 @@ export const pagesData={
         "discount": "SAVE INR 43,483"
       },
       "images": [
-    "/images/thai03_1.jpg",
-    "/images/thai03_2.jpg",
-    "/images/thai03_3.jpg"
+    "/images/thai08.jpg",
+    "/images/thai05.jpg",
+    "/images/thai06.jpg"
   ],
   "inclusions": [
     "Flights included from Delhi to Phuket",
@@ -918,9 +918,9 @@ export const pagesData={
     "Visa Charges"
   ],
   "belowImages": [
-    "/images/thai03_1.jpg",
-    "/images/thai03_2.jpg",
-    "/images/thai03_3.jpg"
+    "/images/thai03.JPG",
+    "/images/thai02.JPG",
+    "/images/thai01.JPG"
   ],
   "tripDurations": [
     { "days": 5, "price": 59900 },
@@ -943,7 +943,7 @@ export const pagesData={
     },
     "thai04": {
     "poster": {
-      "image": "./images/thailand01.JPG",
+      "image": "./images/thailand04.jpg",
       "days": "6 days & 5 nights",
       "rating": "4.9",
       "reviews": "1.3K",
@@ -956,9 +956,9 @@ export const pagesData={
       "discount": "SAVE INR 12,870"
     },
     "images": [
-    "/images/thai04_1.jpg",
-    "/images/thai04_2.jpg",
-    "/images/thai04_3.jpg"
+    "/images/thai10.jpg",
+    "/images/thai11.jpg",
+    "/images/thai13.jpg"
   ],
   "inclusions": [
     "Flights included from Delhi to Phuket",
@@ -978,9 +978,9 @@ export const pagesData={
     "Visa Charges"
   ],
   "belowImages": [
-    "/images/thai04_1.jpg",
-    "/images/thai04_2.jpg",
-    "/images/thai04_3.jpg"
+    "/images/thai01.JPG",
+    "/images/thai05.jpg",
+    "/images/thai08.jpg"
   ],
   "tripDurations": [
     { "days": 5, "price": 35900 },
@@ -1003,7 +1003,7 @@ export const pagesData={
   },
   "thai05": {
     "poster": {
-      "image": "./images/thailand02.JPG",
+      "image": "./images/thailand05.jpg",
       "days": "9 days & 8 nights",
       "rating": "4.5",
       "reviews": "717",
@@ -1016,9 +1016,9 @@ export const pagesData={
       "discount": "SAVE INR 18,942"
     },
     "images": [
-    "/images/thai05_1.jpg",
-    "/images/thai05_2.jpg",
-    "/images/thai05_3.jpg"
+    "/images/thai08.jpg",
+    "/images/thai10.jpg",
+    "/images/thai12.jpg"
   ],
   "inclusions": [
     "Flights included from Delhi to Pattaya",
@@ -1039,9 +1039,9 @@ export const pagesData={
     "Visa Charges"
   ],
   "belowImages": [
-    "/images/thai05_1.jpg",
-    "/images/thai05_2.jpg",
-    "/images/thai05_3.jpg"
+    "/images/thai01.JPG",
+    "/images/thai09.jpg",
+    "/images/thai12.jpg"
   ],
   "tripDurations": [
     { "days": 8, "price": 57400 },
@@ -1066,7 +1066,7 @@ export const pagesData={
   },
   "thai06": {
     "poster": {
-      "image": "./images/thailand03.JPG",
+      "image": "./images/thailand06.JPG",
       "days": "6 days & 5 nights",
       "rating": "4.5",
       "reviews": "14",
@@ -1079,9 +1079,9 @@ export const pagesData={
       "discount": "SAVE INR 9,715"
     },
     "images": [
-    "/images/thai06_1.jpg",
-    "/images/thai06_2.jpg",
-    "/images/thai06_3.jpg"
+    "/images/thai14.jpg",
+    "/images/thai12.jpg",
+    "/images/thai13.jpg"
   ],
   "inclusions": [
     "Flights included from Delhi to Phuket",
@@ -1100,9 +1100,9 @@ export const pagesData={
     "Visa Charges"
   ],
   "belowImages": [
-    "/images/thai06_1.jpg",
-    "/images/thai06_2.jpg",
-    "/images/thai06_3.jpg"
+    "/images/thai05.jpg",
+    "/images/thai09.jpg",
+    "/images/thai04.jpg"
   ],
   "tripDurations": [
     { "days": 5, "price": 38861 },
@@ -1139,9 +1139,9 @@ export const pagesData={
     "discount": "SAVE INR 17,950"
   },
   "images": [
-    "/images/bhu01_1.jpg",
-    "/images/bhu01_2.jpg",
-    "/images/bhu01_3.jpg"
+    "/images/bhu04.jpg",
+    "/images/bhu05.jpg",
+    "/images/bhu06.jpg"
   ],
   "inclusions": [
     "Flights included from Delhi to Bhutan",
@@ -1183,9 +1183,9 @@ export const pagesData={
     "discount": "SAVE INR 13,009"
   },
   "images": [
-    "/images/bhu02_1.jpg",
-    "/images/bhu02_2.jpg",
-    "/images/bhu02_3.jpg"
+    "/images/bhu07.jpg",
+    "/images/bhu08.jpg",
+    "/images/bhu09.jpg"
   ],
   "inclusions": [
     "Flights from Delhi to Bhutan",
@@ -1224,9 +1224,9 @@ export const pagesData={
     "discount": "SAVE INR 20,701"
   },
   "images": [
-    "/images/bhu03_1.jpg",
-    "/images/bhu03_2.jpg",
-    "/images/bhu03_3.jpg"
+    "/images/bhu11.jpg",
+    "/images/bhu12.jpg",
+    "/images/bhu13.jpg"
   ],
   "inclusions": [
     "Flights included from Delhi to Bhutan",
@@ -1256,7 +1256,7 @@ export const pagesData={
 },
 "bhu04": {
   "poster": {
-    "image": "./images/bhutan01.JPG",
+    "image": "./images/bhu04.jpg",
     "days": "8 days & 7 nights",
     "rating": "5.0",
     "reviews": "139",
@@ -1269,9 +1269,9 @@ export const pagesData={
     "discount": "SAVE INR 25,699"
   },
   "images": [
-    "/images/bhu04_1.jpg",
-    "/images/bhu04_2.jpg",
-    "/images/bhu04_3.jpg"
+    "/images/bhu09.jpg",
+    "/images/bhu10.jpg",
+    "/images/bhu13.jpg"
   ],
   "inclusions": [
     "Flights included from Delhi to Kathmandu and Bhutan",
@@ -1300,7 +1300,7 @@ export const pagesData={
 },
 "bhu05": {
   "poster": {
-    "image": "./images/bhutan02.JPG",
+    "image": "./images/bhu05.jpg",
     "days": "9 days & 8 nights",
     "rating": "4.5",
     "reviews": "33",
@@ -1313,9 +1313,9 @@ export const pagesData={
     "discount": "SAVE INR 8,047"
   },
   "images": [
-    "/images/bhu05_1.jpg",
-    "/images/bhu05_2.jpg",
-    "/images/bhu05_3.jpg"
+    "/images/bhu05.jpg",
+    "/images/bhu07.jpg",
+    "/images/bhu09.jpg"
   ],
   "inclusions": [
     "All bike rentals and equipment",
@@ -1343,7 +1343,7 @@ export const pagesData={
 },
 "bhu06": {
   "poster": {
-    "image": "./images/bhutan03.JPG",
+    "image": "./images/bhu06.jpg",
     "days": "8 days & 7 nights",
     "rating": "5.0",
     "reviews": "38",
@@ -1356,9 +1356,9 @@ export const pagesData={
     "discount": "SAVE INR 16,910"
   },
   "images": [
-    "/images/bhu06_1.jpg",
-    "/images/bhu06_2.jpg",
-    "/images/bhu06_3.jpg"
+    "/images/bhu01.JPG",
+    "/images/bhu02.JPG",
+    "/images/bhu03.JPG"
   ],
   "inclusions": [
     "Flights from Delhi to Bhutan",
@@ -1404,9 +1404,9 @@ export const pagesData={
             "discount": "SAVE INR 20,912"
           },
           "images": [
-            "/images/bali01_1.jpg",
-            "/images/bali01_2.jpg",
-            "/images/bali01_3.jpg"
+            "/images/bali11.jpg",
+            "/images/bali12.jpg",
+            "/images/bali13.jpg"
           ],
           "inclusions": [
             "Flights from Delhi to Bali",
@@ -1447,9 +1447,9 @@ export const pagesData={
             "discount": "SAVE INR 13,900"
           },
           "images": [
-            "/images/bali02_1.jpg",
-            "/images/bali02_2.jpg",
-            "/images/bali02_3.jpg"
+            "/images/bali05.jpg",
+            "/images/bali06.jpg",
+            "/images/bali07.jpg"
           ],
           "inclusions": [
             "Flights from Delhi to Bali",
@@ -1490,9 +1490,9 @@ export const pagesData={
             "discount": "SAVE INR 12,075"
           },
           "images": [
-            "/images/bali03_1.jpg",
-            "/images/bali03_2.jpg",
-            "/images/bali03_3.jpg"
+            "/images/bali08.jpg",
+            "/images/bali09.jpg",
+            "/images/bali10.jpg"
           ],
           "inclusions": [
             "Flights from Delhi to Bali",
@@ -1521,7 +1521,7 @@ export const pagesData={
         },
         "bali04": {
           "poster": {
-            "image": "./images/bali04.JPG",
+            "image": "./images/bali04.jpg",
             "days": "7 days & 6 nights",
             "rating": "4.9",
             "reviews": "1054",
@@ -1534,9 +1534,9 @@ export const pagesData={
             "discount": "SAVE INR 13,950"
           },
           "images": [
-            "/images/bali04_1.jpg",
-            "/images/bali04_2.jpg",
-            "/images/bali04_3.jpg"
+            "/images/bali11.jpg",
+            "/images/bali12.jpg",
+            "/images/bali13.jpg"
           ],
           "inclusions": [
             "Flights from Delhi to Bali",
@@ -1566,7 +1566,7 @@ export const pagesData={
         },
         "bali05": {
           "poster": {
-            "image": "./images/bali05.JPG",
+            "image": "./images/bali05.jpg",
             "days": "6 days & 5 nights",
             "rating": "4.8",
             "reviews": "873",
@@ -1579,9 +1579,9 @@ export const pagesData={
             "discount": "SAVE INR 16,000"
           },
           "images": [
-            "/images/bali05_1.jpg",
-            "/images/bali05_2.jpg",
-            "/images/bali05_3.jpg"
+            "/images/bali07.jpg",
+            "/images/bali09.jpg",
+            "/images/bali11.jpg"
           ],
           "inclusions": [
             "Flights from Delhi to Bali",
@@ -1610,7 +1610,7 @@ export const pagesData={
         },
         "bali06": {
           "poster": {
-            "image": "./images/bali06.JPG",
+            "image": "./images/bali06.jpg",
             "days": "5 days & 4 nights",
             "rating": "4.7",
             "reviews": "765",
@@ -1623,9 +1623,9 @@ export const pagesData={
             "discount": "SAVE INR 14,500"
           },
           "images": [
-            "/images/bali06_1.jpg",
-            "/images/bali06_2.jpg",
-            "/images/bali06_3.jpg"
+            "/images/bali01.jpg",
+            "/images/bali02.jpg",
+            "/images/bali03.jpg"
           ],
           "inclusions": [
             "Flights from Delhi to Bali",
@@ -1671,9 +1671,9 @@ export const pagesData={
           "discount": "SAVE INR 90,000"
         },
         "images": [
-          "/images/usa01_1.jpg",
-          "/images/usa01_2.jpg",
-          "/images/usa01_3.jpg"
+          "/images/usa11.jpg",
+          "/images/usa12.jpg",
+          "/images/usa13.jpg"
         ],
         "inclusions": [
           "Flights from India to USA",
@@ -1715,9 +1715,9 @@ export const pagesData={
           "discount": "SAVE INR 54,490"
         },
         "images": [
-          "/images/usa02_1.jpg",
-          "/images/usa02_2.jpg",
-          "/images/usa02_3.jpg"
+          "/images/usa05.jpg",
+          "/images/usa06.jpg",
+          "/images/usa07.jpg"
         ],
         "inclusions": [
           "Flights from India to USA",
@@ -1757,9 +1757,9 @@ export const pagesData={
           "discount": "SAVE INR 38,942"
         },
         "images": [
-          "/images/usa03_1.jpg",
-          "/images/usa03_2.jpg",
-          "/images/usa03_3.jpg"
+          "/images/usa08.jpg",
+          "/images/usa09.jpg",
+          "/images/usa10.jpg"
         ],
         "inclusions": [
           "Flights from India to USA",
@@ -1785,7 +1785,7 @@ export const pagesData={
       },
       "usa04": {
         "poster": {
-          "image": "./images/usa04.JPG",
+          "image": "./images/usa04.jpg",
           "days": "10 days & 9 nights",
           "rating": "4.9",
           "reviews": "98",
@@ -1798,9 +1798,9 @@ export const pagesData={
           "discount": "SAVE INR 75,000"
         },
         "images": [
-          "/images/usa04_1.jpg",
-          "/images/usa04_2.jpg",
-          "/images/usa04_3.jpg"
+          "/images/usa11.jpg",
+          "/images/usa12.jpg",
+          "/images/usa13.jpg"
         ],
         "inclusions": [
           "Flights from India to USA",
@@ -1830,7 +1830,7 @@ export const pagesData={
 
         "usa05": {
           "poster": {
-            "image": "./images/usa05.JPG",
+            "image": "./images/usa05.jpg",
             "days": "8 days & 7 nights",
             "rating": "4.8",
             "reviews": "112",
@@ -1843,9 +1843,9 @@ export const pagesData={
             "discount": "SAVE INR 60,000"
           },
           "images": [
-            "/images/usa05_1.jpg",
-            "/images/usa05_2.jpg",
-            "/images/usa05_3.jpg"
+            "/images/usa01.JPG",
+            "/images/usa02.JPG",
+            "/images/usa03.JPG"
           ],
           "inclusions": [
             "Flights from India to USA",
@@ -1874,7 +1874,7 @@ export const pagesData={
         },
         "usa06": {
           "poster": {
-            "image": "./images/usa06.JPG",
+            "image": "./images/usa06.jpg",
             "days": "12 days & 11 nights",
             "rating": "5.0",
             "reviews": "134",
@@ -1887,9 +1887,9 @@ export const pagesData={
             "discount": "SAVE INR 85,000"
           },
           "images": [
-            "/images/usa06_1.jpg",
-            "/images/usa06_2.jpg",
-            "/images/usa06_3.jpg"
+            "/images/usa07.jpg",
+            "/images/usa09.jpg",
+            "/images/usa05.jpg"
           ],
           "inclusions": [
             "Flights from India to USA",
