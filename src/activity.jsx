@@ -78,7 +78,7 @@ const ThingsToDoInDubai = () => {
     }],
     Bhutan:[{
       "title": "Tiger's Nest Monastery",
-      "image": "./images/bhutan01.JPG",
+      "image": "./images/bhu10.jpg",
       "description": "The Tiger's Nest Monastery is a sacred site in Bhutan, perched on a cliffside 900 meters above the Paro Valley.",
       "rating": 4.9,
       "reviews": 890,
@@ -89,7 +89,7 @@ const ThingsToDoInDubai = () => {
     },
     {
       "title": "Paro Dzong",
-      "image": "./images/bhutan02.JPG",
+      "image": "./images/bhu12.jpg",
       "description": "Paro Dzong is a fortress-monastery, offering stunning views of the Paro Valley and a significant part of Bhutan's history.",
       "rating": 4.8,
       "reviews": 762,
@@ -100,7 +100,7 @@ const ThingsToDoInDubai = () => {
     }],
     Bali: [{
       "title": "Bali Safari & Marine Park",
-      "image": "./images/bali01.JPG",
+      "image": "./images/bali11.jpg",
       "description": "Explore the wildlife of Bali in an immersive safari park with over 60 species of animals from Indonesia, India, and Africa.",
       "rating": 4.7,
       "reviews": 1125,
@@ -111,7 +111,7 @@ const ThingsToDoInDubai = () => {
     },
     {
       "title": "Sacred Monkey Forest Sanctuary",
-      "image": "./images/bali02.JPG",
+      "image": "./images/bali12.jpg",
       "description": "A peaceful forest sanctuary in Ubud, Bali, inhabited by playful long-tailed macaques and surrounded by ancient temple ruins.",
       "rating": 4.8,
       "reviews": 1345,
@@ -122,7 +122,7 @@ const ThingsToDoInDubai = () => {
     }],
     Thailand:[{
       "title": "Safari World",
-      "image": "./images/thailand01.JPG",
+      "image": "./images/thai11.jpg",
       "description": "Safari World in Thailand is a sprawling open zoo and leisure park offering a great mix of animal shows and wildlife exploration.",
       "rating": 4.6,
       "reviews": 1020,
@@ -133,7 +133,7 @@ const ThingsToDoInDubai = () => {
     },
     {
       "title": "Grand Palace & Wat Phra Kaew",
-      "image": "./images/thailand02.JPG",
+      "image": "./images/thai12.jpg",
       "description": "A cultural experience in Thailand, visit the Grand Palace and the Temple of the Emerald Buddha, home to stunning architecture and sacred relics.",
       "rating": 4.9,
       "reviews": 1500,
@@ -144,7 +144,7 @@ const ThingsToDoInDubai = () => {
     }],
     USA:[{
       "title": "Statue of Liberty",
-      "image": "./images/usa01.JPG",
+      "image": "./images/usa11.jpg",
       "description": "The Statue of Liberty is an iconic symbol of freedom and democracy, located on Liberty Island in New York Harbor.",
       "rating": 4.7,
       "reviews": 1390,
@@ -155,7 +155,7 @@ const ThingsToDoInDubai = () => {
     },
     {
       "title": "Grand Canyon Helicopter Tour",
-      "image": "./images/usa02.JPG",
+      "image": "./images/usa12.jpg",
       "description": "Soar above the Grand Canyon in a helicopter for a breathtaking aerial view of one of the world's greatest natural wonders.",
       "rating": 4.9,
       "reviews": 750,
@@ -166,7 +166,7 @@ const ThingsToDoInDubai = () => {
     }],
     Singapoore:[{
       "title": "Gardens by the Bay",
-      "image": "./images/singapore01.JPG",
+      "image": "./images/singapore11.jpg",
       "description": "A stunning nature park in Singapore, with futuristic Supertree Grove and a variety of plant species, showcasing modern gardening.",
       "rating": 4.8,
       "reviews": 1100,
@@ -177,7 +177,7 @@ const ThingsToDoInDubai = () => {
     },
     {
       "title": "Marina Bay Sands SkyPark",
-      "image": "./images/singapore02.JPG",
+      "image": "./images/singapore12.jpg",
       "description": "Enjoy panoramic views of Singapore from the observation deck at the Marina Bay Sands SkyPark, one of the city's most famous landmarks.",
       "rating": 4.7,
       "reviews": 1250,
