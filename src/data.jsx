@@ -1158,6 +1158,23 @@ export const pagesData={
     "Meals not mentioned",
     "Visa charges"
   ],
+  "belowImages": [
+      "/images/singapore04.jpg",
+      "/images/singapore05.jpg",
+      "/images/singapore06.jpg"
+    ],
+    "tripDurations": [
+      { "days": 4, "price": 42950 },
+      { "days": 5, "price": 47999 },
+      { "days": 6, "price": 55000 },
+      { "days": 7, "price": 59999 }
+    ],
+    "trip": [
+      "Enjoy a blend of city romance and tropical retreat",
+      "Experience Universal Studios and Sentosa Island",
+      "Relax on the beaches of Bali",
+      "Explore the vibrant nightlife of Singapore"
+    ],
   "itinerary": [
     { "day": "Day 1", "title": "Arrival in Phuntsholing" },
     { "day": "Day 2", "title": "Visit Thimphu City" },
@@ -1200,6 +1217,23 @@ export const pagesData={
     "Meals not mentioned",
     "Visa charges"
   ],
+  "belowImages": [
+      "/images/singapore04.jpg",
+      "/images/singapore05.jpg",
+      "/images/singapore06.jpg"
+    ],
+    "tripDurations": [
+      { "days": 4, "price": 42950 },
+      { "days": 5, "price": 47999 },
+      { "days": 6, "price": 55000 },
+      { "days": 7, "price": 59999 }
+    ],
+    "trip": [
+      "Enjoy a blend of city romance and tropical retreat",
+      "Experience Universal Studios and Sentosa Island",
+      "Relax on the beaches of Bali",
+      "Explore the vibrant nightlife of Singapore"
+    ],
   "itinerary": [
     { "day": "Day 1", "title": "Arrival in Phuntsholing" },
     { "day": "Day 2", "title": "Thimphu City Tour" },
@@ -1243,6 +1277,23 @@ export const pagesData={
     "Meals not mentioned",
     "Visa charges"
   ],
+  "belowImages": [
+      "/images/singapore04.jpg",
+      "/images/singapore05.jpg",
+      "/images/singapore06.jpg"
+    ],
+    "tripDurations": [
+      { "days": 4, "price": 42950 },
+      { "days": 5, "price": 47999 },
+      { "days": 6, "price": 55000 },
+      { "days": 7, "price": 59999 }
+    ],
+    "trip": [
+      "Enjoy a blend of city romance and tropical retreat",
+      "Experience Universal Studios and Sentosa Island",
+      "Relax on the beaches of Bali",
+      "Explore the vibrant nightlife of Singapore"
+    ],
   "itinerary": [
     { "day": "Day 1", "title": "Arrival in Phuntsholing" },
     { "day": "Day 2", "title": "Explore Thimphu" },
@@ -1287,6 +1338,23 @@ export const pagesData={
     "Meals not mentioned",
     "Visa charges"
   ],
+  "belowImages": [
+      "/images/singapore04.jpg",
+      "/images/singapore05.jpg",
+      "/images/singapore06.jpg"
+    ],
+    "tripDurations": [
+      { "days": 4, "price": 42950 },
+      { "days": 5, "price": 47999 },
+      { "days": 6, "price": 55000 },
+      { "days": 7, "price": 59999 }
+    ],
+    "trip": [
+      "Enjoy a blend of city romance and tropical retreat",
+      "Experience Universal Studios and Sentosa Island",
+      "Relax on the beaches of Bali",
+      "Explore the vibrant nightlife of Singapore"
+    ],
   "itinerary": [
     { "day": "Day 1", "title": "Arrival in Kathmandu" },
     { "day": "Day 2", "title": "Kathmandu City Tour" },
@@ -1329,6 +1397,23 @@ export const pagesData={
     "Meals not mentioned",
     "Visa charges"
   ],
+  "belowImages": [
+      "/images/singapore04.jpg",
+      "/images/singapore05.jpg",
+      "/images/singapore06.jpg"
+    ],
+    "tripDurations": [
+      { "days": 4, "price": 42950 },
+      { "days": 5, "price": 47999 },
+      { "days": 6, "price": 55000 },
+      { "days": 7, "price": 59999 }
+    ],
+    "trip": [
+      "Enjoy a blend of city romance and tropical retreat",
+      "Experience Universal Studios and Sentosa Island",
+      "Relax on the beaches of Bali",
+      "Explore the vibrant nightlife of Singapore"
+    ],
   "itinerary": [
     { "day": "Day 1", "title": "Arrival in Phuntsholing" },
     { "day": "Day 2", "title": "Biking from Phuntsholing to Thimphu" },
@@ -1375,6 +1460,23 @@ export const pagesData={
     "Meals not mentioned",
     "Visa charges"
   ],
+  "belowImages": [
+      "/images/singapore04.jpg",
+      "/images/singapore05.jpg",
+      "/images/singapore06.jpg"
+    ],
+    "tripDurations": [
+      { "days": 4, "price": 42950 },
+      { "days": 5, "price": 47999 },
+      { "days": 6, "price": 55000 },
+      { "days": 7, "price": 59999 }
+    ],
+    "trip": [
+      "Enjoy a blend of city romance and tropical retreat",
+      "Experience Universal Studios and Sentosa Island",
+      "Relax on the beaches of Bali",
+      "Explore the vibrant nightlife of Singapore"
+    ],
   "itinerary": [
     { "day": "Day 1", "title": "Arrival in Phuntsholing" },
     { "day": "Day 2", "title": "Thimphu City Tour" },
@@ -1422,6 +1524,23 @@ export const pagesData={
             "Meals not mentioned",
             "Visa charges"
           ],
+          "belowImages": [
+      "/images/singapore04.jpg",
+      "/images/singapore05.jpg",
+      "/images/singapore06.jpg"
+    ],
+    "tripDurations": [
+      { "days": 4, "price": 42950 },
+      { "days": 5, "price": 47999 },
+      { "days": 6, "price": 55000 },
+      { "days": 7, "price": 59999 }
+    ],
+    "trip": [
+      "Enjoy a blend of city romance and tropical retreat",
+      "Experience Universal Studios and Sentosa Island",
+      "Relax on the beaches of Bali",
+      "Explore the vibrant nightlife of Singapore"
+    ],
           "itinerary": [
             { "day": "Day 1", "title": "Arrival in Bali" },
             { "day": "Day 2", "title": "Explore Ubud - Temple and Terraces" },
@@ -1461,6 +1580,23 @@ export const pagesData={
             "Airport transfers",
             "Daily Breakfast"
           ],
+          "belowImages": [
+      "/images/singapore04.jpg",
+      "/images/singapore05.jpg",
+      "/images/singapore06.jpg"
+    ],
+    "tripDurations": [
+      { "days": 4, "price": 42950 },
+      { "days": 5, "price": 47999 },
+      { "days": 6, "price": 55000 },
+      { "days": 7, "price": 59999 }
+    ],
+    "trip": [
+      "Enjoy a blend of city romance and tropical retreat",
+      "Experience Universal Studios and Sentosa Island",
+      "Relax on the beaches of Bali",
+      "Explore the vibrant nightlife of Singapore"
+    ],
           "exclusions": [
             "Personal expenses",
             "Meals not mentioned",
@@ -1509,6 +1645,23 @@ export const pagesData={
             "Meals not mentioned",
             "Visa charges"
           ],
+          "belowImages": [
+      "/images/singapore04.jpg",
+      "/images/singapore05.jpg",
+      "/images/singapore06.jpg"
+    ],
+    "tripDurations": [
+      { "days": 4, "price": 42950 },
+      { "days": 5, "price": 47999 },
+      { "days": 6, "price": 55000 },
+      { "days": 7, "price": 59999 }
+    ],
+    "trip": [
+      "Enjoy a blend of city romance and tropical retreat",
+      "Experience Universal Studios and Sentosa Island",
+      "Relax on the beaches of Bali",
+      "Explore the vibrant nightlife of Singapore"
+    ],
           "itinerary": [
             { "day": "Day 1", "title": "Arrival in Bali" },
             { "day": "Day 2", "title": "Explore Ubud - Hills and Temples" },
@@ -1553,6 +1706,23 @@ export const pagesData={
             "Meals not mentioned",
             "Visa charges"
           ],
+          "belowImages": [
+      "/images/singapore04.jpg",
+      "/images/singapore05.jpg",
+      "/images/singapore06.jpg"
+    ],
+    "tripDurations": [
+      { "days": 4, "price": 42950 },
+      { "days": 5, "price": 47999 },
+      { "days": 6, "price": 55000 },
+      { "days": 7, "price": 59999 }
+    ],
+    "trip": [
+      "Enjoy a blend of city romance and tropical retreat",
+      "Experience Universal Studios and Sentosa Island",
+      "Relax on the beaches of Bali",
+      "Explore the vibrant nightlife of Singapore"
+    ],
           "itinerary": [
             { "day": "Day 1", "title": "Arrival in Bali" },
             { "day": "Day 2", "title": "Explore Ubud - Temple and Terraces" },
@@ -1598,6 +1768,23 @@ export const pagesData={
             "Meals not mentioned",
             "Visa charges"
           ],
+          "belowImages": [
+      "/images/singapore04.jpg",
+      "/images/singapore05.jpg",
+      "/images/singapore06.jpg"
+    ],
+    "tripDurations": [
+      { "days": 4, "price": 42950 },
+      { "days": 5, "price": 47999 },
+      { "days": 6, "price": 55000 },
+      { "days": 7, "price": 59999 }
+    ],
+    "trip": [
+      "Enjoy a blend of city romance and tropical retreat",
+      "Experience Universal Studios and Sentosa Island",
+      "Relax on the beaches of Bali",
+      "Explore the vibrant nightlife of Singapore"
+    ],
           "itinerary": [
             { "day": "Day 1", "title": "Arrival in Bali" },
             { "day": "Day 2", "title": "Explore Ubud - Temples and Terraces" },
@@ -1642,6 +1829,23 @@ export const pagesData={
             "Meals not mentioned",
             "Visa charges"
           ],
+          "belowImages": [
+      "/images/singapore04.jpg",
+      "/images/singapore05.jpg",
+      "/images/singapore06.jpg"
+    ],
+    "tripDurations": [
+      { "days": 4, "price": 42950 },
+      { "days": 5, "price": 47999 },
+      { "days": 6, "price": 55000 },
+      { "days": 7, "price": 59999 }
+    ],
+    "trip": [
+      "Enjoy a blend of city romance and tropical retreat",
+      "Experience Universal Studios and Sentosa Island",
+      "Relax on the beaches of Bali",
+      "Explore the vibrant nightlife of Singapore"
+    ],
           "itinerary": [
             { "day": "Day 1", "title": "Arrival in Bali" },
             { "day": "Day 2", "title": "Explore Ubud - Sacred Temples" },
@@ -1688,6 +1892,23 @@ export const pagesData={
           "Meals not mentioned",
           "Visa charges"
         ],
+        "belowImages": [
+      "/images/singapore04.jpg",
+      "/images/singapore05.jpg",
+      "/images/singapore06.jpg"
+    ],
+    "tripDurations": [
+      { "days": 4, "price": 42950 },
+      { "days": 5, "price": 47999 },
+      { "days": 6, "price": 55000 },
+      { "days": 7, "price": 59999 }
+    ],
+    "trip": [
+      "Enjoy a blend of city romance and tropical retreat",
+      "Experience Universal Studios and Sentosa Island",
+      "Relax on the beaches of Bali",
+      "Explore the vibrant nightlife of Singapore"
+    ],
         "itinerary": [
           { "day": "Day 1", "title": "Arrival in New York City" },
           { "day": "Day 2", "title": "Explore New York City" },
@@ -1727,6 +1948,23 @@ export const pagesData={
           "Airport transfers",
           "Daily breakfast"
         ],
+        "belowImages": [
+      "/images/singapore04.jpg",
+      "/images/singapore05.jpg",
+      "/images/singapore06.jpg"
+    ],
+    "tripDurations": [
+      { "days": 4, "price": 42950 },
+      { "days": 5, "price": 47999 },
+      { "days": 6, "price": 55000 },
+      { "days": 7, "price": 59999 }
+    ],
+    "trip": [
+      "Enjoy a blend of city romance and tropical retreat",
+      "Experience Universal Studios and Sentosa Island",
+      "Relax on the beaches of Bali",
+      "Explore the vibrant nightlife of Singapore"
+    ],
         "exclusions": [
           "Personal expenses",
           "Meals not mentioned",
@@ -1768,6 +2006,23 @@ export const pagesData={
           "City tours in New York, Washington D.C., and Niagara Falls",
           "Daily breakfast"
         ],
+        "belowImages": [
+      "/images/singapore04.jpg",
+      "/images/singapore05.jpg",
+      "/images/singapore06.jpg"
+    ],
+    "tripDurations": [
+      { "days": 4, "price": 42950 },
+      { "days": 5, "price": 47999 },
+      { "days": 6, "price": 55000 },
+      { "days": 7, "price": 59999 }
+    ],
+    "trip": [
+      "Enjoy a blend of city romance and tropical retreat",
+      "Experience Universal Studios and Sentosa Island",
+      "Relax on the beaches of Bali",
+      "Explore the vibrant nightlife of Singapore"
+    ],
         "exclusions": [
           "Personal expenses",
           "Meals not mentioned",
@@ -1815,6 +2070,23 @@ export const pagesData={
           "Meals not mentioned",
           "Visa charges"
         ],
+        "belowImages": [
+      "/images/singapore04.jpg",
+      "/images/singapore05.jpg",
+      "/images/singapore06.jpg"
+    ],
+    "tripDurations": [
+      { "days": 4, "price": 42950 },
+      { "days": 5, "price": 47999 },
+      { "days": 6, "price": 55000 },
+      { "days": 7, "price": 59999 }
+    ],
+    "trip": [
+      "Enjoy a blend of city romance and tropical retreat",
+      "Experience Universal Studios and Sentosa Island",
+      "Relax on the beaches of Bali",
+      "Explore the vibrant nightlife of Singapore"
+    ],
         "itinerary": [
           { "day": "Day 1", "title": "Arrival in New York City" },
           { "day": "Day 2", "title": "Explore New York City" },
@@ -1860,6 +2132,23 @@ export const pagesData={
             "Meals not mentioned",
             "Visa charges"
           ],
+          "belowImages": [
+      "/images/singapore04.jpg",
+      "/images/singapore05.jpg",
+      "/images/singapore06.jpg"
+    ],
+    "tripDurations": [
+      { "days": 4, "price": 42950 },
+      { "days": 5, "price": 47999 },
+      { "days": 6, "price": 55000 },
+      { "days": 7, "price": 59999 }
+    ],
+    "trip": [
+      "Enjoy a blend of city romance and tropical retreat",
+      "Experience Universal Studios and Sentosa Island",
+      "Relax on the beaches of Bali",
+      "Explore the vibrant nightlife of Singapore"
+    ],
           "itinerary": [
             { "day": "Day 1", "title": "Arrival in Los Angeles" },
             { "day": "Day 2", "title": "Explore Los Angeles" },
@@ -1904,6 +2193,23 @@ export const pagesData={
             "Meals not mentioned",
             "Visa charges"
           ],
+          "belowImages": [
+      "/images/singapore04.jpg",
+      "/images/singapore05.jpg",
+      "/images/singapore06.jpg"
+    ],
+    "tripDurations": [
+      { "days": 4, "price": 42950 },
+      { "days": 5, "price": 47999 },
+      { "days": 6, "price": 55000 },
+      { "days": 7, "price": 59999 }
+    ],
+    "trip": [
+      "Enjoy a blend of city romance and tropical retreat",
+      "Experience Universal Studios and Sentosa Island",
+      "Relax on the beaches of Bali",
+      "Explore the vibrant nightlife of Singapore"
+    ],
           "itinerary": [
             { "day": "Day 1", "title": "Arrival in New York City" },
             { "day": "Day 2", "title": "Explore New York City" },
