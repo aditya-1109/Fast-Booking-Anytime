@@ -52,18 +52,7 @@ const MenuBar = () => {
       </Button>
     </div>
 
-    {/* Mobile Dropdown */}
-    <div className="sm:hidden">
-      <Menu>
-        <MenuButton as={Button} color="warning" variant="contained">
-          Menu
-        </MenuButton>
-        <MenuList>
-          <MenuItem onClick={() => navigate('/tours')}>Tours</MenuItem>
-          <MenuItem onClick={() => navigate('/activities')}>Activities</MenuItem>
-        </MenuList>
-      </Menu>
-    </div>
+    
   </div>
 </div>
 
