@@ -11,7 +11,7 @@ const DestinationSection = ({ title, destinations, navigate, call, whatsapp }) =
   <section className="p-6">
     <div className="flex justify-between items-center">
       <h2 className="text-2xl font-semibold">{title}</h2>
-      <Button variant="text" onClick={() => navigate(`/view/${title}`)} color="warning">
+      <Button variant="text" onClick={() => navigate(`/view/${title}`)} color="#049a9b">
         View All ➜
       </Button>
     </div>
@@ -42,10 +42,10 @@ const DestinationSection = ({ title, destinations, navigate, call, whatsapp }) =
 
             
             <div className="flex gap-3 mt-3">
-              <Button variant="outlined" onClick={call} startIcon={<FaPhoneAlt />} color="warning">
+              <Button variant="outlined" onClick={call} startIcon={<FaPhoneAlt />} color="#049a9b">
                 Call
               </Button>
-              <Button variant="contained" onClick={whatsapp} color="warning">
+              <Button variant="contained" onClick={whatsapp} sx={{ backgroundColor: "#049a9b", '&:hover': { backgroundColor: "#037f7f" } }}>
                 Request Callback
               </Button>
             </div> 
