@@ -20,9 +20,9 @@ const Footer = () => {
   >
     {/* About Section */}
     <Grid item xs={12} sm={6} md={3}>
-      <Typography variant="h6" className="text-sm text-black font-semibold">ABOUT Booking Anytime</Typography>
+      <Typography variant="h6" className="text-sm text-black font-semibold">ABOUT Fast Booking Anytime</Typography>
       <ul className="space-y-2 mt-2">
-        {["About Us", "We Are Hiring", "Booking Anytime Reviews", "Terms & Conditions", "Privacy Policies", "Support"].map((item) => (
+        {["About Us", "We Are Hiring", "Fast Booking Anytime Reviews", "Terms & Conditions", "Privacy Policies", "Support"].map((item) => (
           <li key={item}>
             <Link href={item==="About Us"?"#":"#"} className="text-gray-500 hover:text-black text-sm">{item}</Link>
           </li>
@@ -79,7 +79,7 @@ const Footer = () => {
 
     {/* Copyright */}
     <Typography variant="body2" className="text-gray-400 mt-3">
-      © 2025 Fast Booking.com All rights reserved.
+      © 2025 Fast Booking Anytime.com All rights reserved.
     </Typography>
     <Typography variant="caption" className="text-gray-500 mt-1 block">
       The content and images used on this site are copyright protected. Unauthorized use is prohibited and punishable by law.
