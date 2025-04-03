@@ -42,7 +42,7 @@ const DestinationSection = ({ title, destinations, navigate, call, whatsapp }) =
 
             
             <div className="flex gap-3 mt-3">
-              <Button variant="outlined" onClick={call} startIcon={<FaPhoneAlt />} color="#049a9b">
+              <Button variant="outlined" onClick={call} startIcon={<FaPhoneAlt />} color="049a9b">
                 Call
               </Button>
               <Button variant="contained" onClick={whatsapp} sx={{ backgroundColor: "#049a9b", '&:hover': { backgroundColor: "#037f7f" } }}>
