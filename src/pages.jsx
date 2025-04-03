@@ -57,7 +57,7 @@ const DubaiTourPage = () => {
         {dataa[tittle]?.tripDurations.map((trip) => (
           <button
             key={trip.days}
-            className={`px-3 py-2 rounded-md border ${selectedDuration === trip.days ? "bg-orange-500 text-white" : "bg-gray-100"}`}
+            className={`px-3 py-2 rounded-md border ${selectedDuration === trip.days ? "bg-[rgba(4,154,155,255)]-500 text-white" : "bg-gray-100"}`}
             onClick={() => setSelectedDuration(trip.days)}
           >
             {trip.days} days<br /><span className="text-sm">₹ {trip.price}</span>
@@ -75,7 +75,7 @@ const DubaiTourPage = () => {
         {["Standard", "Deluxe", "Luxury"].map((category) => (
           <button
             key={category}
-            className={`px-3 py-2 rounded-md border ${selectedStay === category ? "bg-orange-500 text-white" : "bg-gray-100"}`}
+            className={`px-3 py-2 rounded-md border ${selectedStay === category ? "bg-[rgba(4,154,155,255)]-500 text-white" : "bg-gray-100"}`}
             onClick={() => setSelectedStay(category)}
           >
             {category}
@@ -91,7 +91,7 @@ const DubaiTourPage = () => {
         <div className="flex items-center">
           <Rating value={4.8} precision={0.1} readOnly /> <span className="text-gray-600">(46.5k)</span>
         </div>
-        <Button variant="contained" color="warning" className="bg-orange-500 text-white">Send Enquiry</Button>
+        <Button variant="contained" color="warning" sx={{backgroundColor:"rgba(4,154,155,255)" }} className="text-white">Send Enquiry</Button>
       </div>
 
       <Tabs value={tabValue} onChange={(e, newValue) => setTabValue(newValue)} className="bg-white shadow-md rounded-lg mt-6" variant="scrollable" scrollButtons="auto">
@@ -127,7 +127,7 @@ const DubaiTourPage = () => {
           {dataa[tittle]?.itinerary.map((item, index) => (
             <Accordion key={index} className="mb-4 bg-white shadow-md">
               <AccordionSummary expandIcon={<ExpandMoreIcon />} className="font-bold">
-                <span className="text-orange-500 px-4 py-2 rounded-full bg-orange-100 mr-2">{item.day}</span>
+                <span className="text-[rgba(4,154,155,255)]-500 px-4 py-2 rounded-full bg-[rgba(4,154,155,255)] mr-2">{item.day}</span>
                 {item.title}
               </AccordionSummary>
               <AccordionDetails>
@@ -135,7 +135,7 @@ const DubaiTourPage = () => {
               </AccordionDetails>
             </Accordion>
           ))}
-          <h2 className="text-center text-2xl font-bold text-orange-500 mt-6">End Of Trip</h2>
+          <h2 className="text-center text-2xl font-bold text-[rgba(4,154,155,255)]-500 mt-6">End Of Trip</h2>
         </div>
       )}
 

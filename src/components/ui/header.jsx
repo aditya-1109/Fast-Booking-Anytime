@@ -21,7 +21,7 @@ export default function Header() {
   {/* Currency & Login */}
   <div className="flex gap-4 items-center">
     <span className="text-sm hidden sm:block">INR ₹</span>
-    <Button variant="outlined" color="warning">
+    <Button variant="outlined" color="#049a9b">
       Login
     </Button>
   </div>
