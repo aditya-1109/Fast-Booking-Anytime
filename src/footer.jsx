@@ -20,11 +20,11 @@ const Footer = () => {
   >
     {/* About Section */}
     <Grid item xs={12} sm={6} md={3}>
-      <Typography variant="h6" className="text-sm text-black font-semibold">ABOUT THRILLOPHILIA</Typography>
+      <Typography variant="h6" className="text-sm text-black font-semibold">ABOUT Booking Anytime</Typography>
       <ul className="space-y-2 mt-2">
-        {["About Us", "We Are Hiring", "Thrillophilia Reviews", "Terms & Conditions", "Privacy Policies", "Support"].map((item) => (
+        {["About Us", "We Are Hiring", "Booking Anytime Reviews", "Terms & Conditions", "Privacy Policies", "Support"].map((item) => (
           <li key={item}>
-            <Link href="#" className="text-gray-500 hover:text-black text-sm">{item}</Link>
+            <Link href={item==="About Us"?"/about":"#"} className="text-gray-500 hover:text-black text-sm">{item}</Link>
           </li>
         ))}
         <li className="text-red-500"><Link href="#" className="font-semibold text-sm">⚠ Beware of Frauds</Link></li>

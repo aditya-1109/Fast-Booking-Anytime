@@ -3,6 +3,7 @@ import './App.css';
 import ThrillophiliaClone from './webb';
 import ThingsToDoInDubai from './activity';
 import DubaiTourCard from './pages';
+import HeroSection from './about';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route path="/country/:countryName" element={<ThrillophiliaClone />} />
         <Route path="/view/:country" element={<ThingsToDoInDubai />} />
         <Route path='/pic/:tittle/:country' element={<DubaiTourCard />} />
+        <Route path='/about' element={<HeroSection />} />
       </Routes>
     </Router>
   );
