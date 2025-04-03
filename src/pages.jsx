@@ -34,29 +34,26 @@ const DubaiTourPage = () => {
     <>
     <Header />
     <div className="relative w-full mx-auto mt-10 p-4 shadow-lg rounded-lg bg-white">
-      
-      <div className="grid grid-cols-2 gap-4">
-        <img src={dataa[tittle]?.images[0]} alt="Dubai" className="rounded-lg w-full h-96 object-cover" />
+
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <img src={dataa[tittle]?.images[0]} alt="Dubai" className="rounded-lg w-full h-64 md:h-96 object-cover" />
         <div className="grid grid-rows-2 gap-2">
-          <img src={dataa[tittle]?.images[1]} alt="Dubai Night" className="rounded-lg w-full h-48 object-cover" />
-          <img src={dataa[tittle]?.images[2]} alt="Dubai Hotel" className="rounded-lg w-full h-48 object-cover" />
+          <img src={dataa[tittle]?.images[1]} alt="Dubai Night" className="rounded-lg w-full h-32 md:h-48 object-cover" />
+          <img src={dataa[tittle]?.images[2]} alt="Dubai Hotel" className="rounded-lg w-full h-32 md:h-48 object-cover" />
         </div>
       </div>
 
-      {/* Tour Title */}
-      <h2 className="mt-4 text-2xl font-bold">Escape to Dubai | Flights Inclusive Deal</h2>
-      <p className="text-gray-600">{selectedDuration}D/{selectedDuration - 1}N • {selectedDuration} Days in Dubai</p>
+      <h2 className="mt-4 text-xl md:text-2xl font-bold text-center md:text-left">Escape to Dubai | Flights Inclusive Deal</h2>
+      <p className="text-gray-600 text-center md:text-left">{selectedDuration}D/{selectedDuration - 1}N • {selectedDuration} Days in Dubai</p>
 
-      {/* Icons */}
-      <div className="flex items-center space-x-4 my-2 text-gray-600">
+      <div className="flex flex-wrap items-center space-x-4 my-2 text-gray-600 justify-center md:justify-start">
         <span className="flex items-center gap-1"><FaPlaneDeparture /> Transfer Included</span>
         <span className="flex items-center gap-1">🏨 Stay Included</span>
         <span className="flex items-center gap-1">🍽️ Breakfast Included</span>
       </div>
 
-      {/* Trip Duration Selection */}
       <h3 className="mt-4 text-lg font-semibold">Choose Trip Duration</h3>
-      <div className="flex space-x-3 mt-2">
+      <div className="flex flex-wrap gap-3 mt-2">
         {dataa[tittle]?.tripDurations.map((trip) => (
           <button
             key={trip.days}
@@ -68,15 +65,13 @@ const DubaiTourPage = () => {
         ))}
       </div>
 
-      {/* Destination Routes Dropdown */}
       <h3 className="mt-4 text-lg font-semibold">Destination Routes</h3>
       <Select value="Dubai" className="w-full mt-2">
         <MenuItem value="Dubai">Dubai</MenuItem>
       </Select>
 
-      {/* Stay Category */}
       <h3 className="mt-4 text-lg font-semibold">Stay Category</h3>
-      <div className="flex space-x-3 mt-2">
+      <div className="flex flex-wrap gap-3 mt-2">
         {["Standard", "Deluxe", "Luxury"].map((category) => (
           <button
             key={category}
@@ -88,16 +83,17 @@ const DubaiTourPage = () => {
         ))}
       </div>
 
-      {/* Price & Booking */}
-      <div className="flex justify-between items-center mt-4">
+      <div className="flex flex-wrap justify-between items-center mt-4">
         <p className="text-lg font-semibold text-green-600">
-          INR {dataa[tittle]?.tripDurations.find((trip) => trip.days === selectedDuration)?.price} <span className="line-through text-gray-400 text-sm">INR 1,24,761</span>
+          INR {dataa[tittle]?.tripDurations.find((trip) => trip.days === selectedDuration)?.price} 
+          <span className="line-through text-gray-400 text-sm">INR 1,24,761</span>
         </p>
-        <Rating value={4.8} precision={0.1} readOnly /> <span className="text-gray-600">(46.5k)</span>
+        <div className="flex items-center">
+          <Rating value={4.8} precision={0.1} readOnly /> <span className="text-gray-600">(46.5k)</span>
+        </div>
         <Button variant="contained" color="warning" className="bg-orange-500 text-white">Send Enquiry</Button>
       </div>
 
-      {/* Tabs Section */}
       <Tabs value={tabValue} onChange={(e, newValue) => setTabValue(newValue)} className="bg-white shadow-md rounded-lg mt-6" variant="scrollable" scrollButtons="auto">
         <Tab label="Itinerary" />
         <Tab label="Summarized View" />
@@ -107,36 +103,25 @@ const DubaiTourPage = () => {
         <Tab label="Transfers" />
       </Tabs>
 
-      <div className="w-full mx-auto p-6 bg-white rounded-xl shadow-lg justify-start items-start">
-            <h2 className="text-2xl font-bold mb-4">Trip Highlights</h2>
-            {dataa[tittle]?.trip.map((trips, index)=>(<ul className="list-disc pl-0 space-y-2 text-gray-700">
-              <li key={index}>{trips}</li>
-            </ul>))}
-            
-            <Tabs value={selectedTab} onChange={handleTabChange} className="mt-6">
-              <Tab label="Itinerary" />
-              <Tab label="Summarised View" />
-              <Tab label="Activities" />
-              <Tab label="Flights" />
-              <Tab label="Stay" />
-              <Tab label="Transfers" />
-            </Tabs>
-      
-            <div className="relative mt-6">
-              <img
-                src={dataa[tittle]?.belowImages[currentImage]}
-                alt="Dubai"
-                className="w-full h-64 object-cover rounded-lg shadow-md"
-              />
-              <button onClick={prevImage} className="absolute left-4 top-1/2 -translate-y-1/2 bg-white p-2 rounded-full shadow-md">
-                <ChevronLeft />
-              </button>
-              <button onClick={nextImage} className="absolute right-4 top-1/2 -translate-y-1/2 bg-white p-2 rounded-full shadow-md">
-                <ChevronRight />
-              </button>
-            </div>
-          </div>
-      {/* Itinerary Section */}
+      <div className="w-full mx-auto p-6 bg-white rounded-xl shadow-lg">
+        <h2 className="text-xl md:text-2xl font-bold mb-4">Trip Highlights</h2>
+        {dataa[tittle]?.trip.map((trips, index) => (
+          <ul key={index} className="list-disc pl-0 space-y-2 text-gray-700">
+            <li>{trips}</li>
+          </ul>
+        ))}
+
+        <div className="relative mt-6">
+          <img src={dataa[tittle]?.belowImages[currentImage]} alt="Dubai" className="w-full h-48 md:h-64 object-cover rounded-lg shadow-md" />
+          <button onClick={prevImage} className="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 bg-white p-3 md:p-2 rounded-full shadow-md">
+            <ChevronLeft />
+          </button>
+          <button onClick={nextImage} className="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 bg-white p-3 md:p-2 rounded-full shadow-md">
+            <ChevronRight />
+          </button>
+        </div>
+      </div>
+
       {tabValue === 0 && (
         <div className="mt-6">
           {dataa[tittle]?.itinerary.map((item, index) => (
@@ -153,34 +138,36 @@ const DubaiTourPage = () => {
           <h2 className="text-center text-2xl font-bold text-orange-500 mt-6">End Of Trip</h2>
         </div>
       )}
+
       <div className="relative p-6 bg-white w-full shadow-lg rounded-lg">
-      <h2 className="text-2xl font-semibold mb-4">What’s inside the package?</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div>
-          <h3 className="text-xl font-semibold mb-2">Inclusions ✅</h3>
-          <ul className="list-none space-y-2">
-            {dataa[tittle]?.inclusions.map((item, index) => (
-              <li key={index} className="flex items-center">
-                <span className="text-green-500 mr-2">✔</span> {item}
-              </li>
-            ))}
-          </ul>
-        </div>
-        <div>
-          <h3 className="text-xl font-semibold mb-2">Exclusions ❌</h3>
-          <ul className="list-none space-y-2">
-            {dataa[tittle]?.exclusions.map((item, index) => (
-              <li key={index} className="flex items-center">
-                <span className="text-red-500 mr-2">✖</span> {item}
-              </li>
-            ))}
-          </ul>
+        <h2 className="text-xl md:text-2xl font-semibold mb-4">What’s inside the package?</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div>
+            <h3 className="text-lg font-semibold mb-2">Inclusions ✅</h3>
+            <ul className="list-none space-y-2">
+              {dataa[tittle]?.inclusions.map((item, index) => (
+                <li key={index} className="flex items-center">
+                  <span className="text-green-500 mr-2">✔</span> {item}
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div>
+            <h3 className="text-lg font-semibold mb-2">Exclusions ❌</h3>
+            <ul className="list-none space-y-2">
+              {dataa[tittle]?.exclusions.map((item, index) => (
+                <li key={index} className="flex items-center">
+                  <span className="text-red-500 mr-2">✖</span> {item}
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
       <Footer className="mt-20"/>
     </div>
-    </>
+</>
+
   );
 };
 

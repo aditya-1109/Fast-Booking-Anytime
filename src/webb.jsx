@@ -15,11 +15,15 @@ const DestinationSection = ({ title, destinations, navigate, call, whatsapp }) =
         View All ➜
       </Button>
     </div>
-    <div className="flex gap-4 mt-4 overflow-x-auto whitespace-nowrap scrollbar-hide">
-    {Object.entries(destinations).map(([titttle, dest])=> (
-        <div key={titttle} className="border rounded-lg overflow-hidden shadow-sm min-w-1/3 max-w-[400px]">
 
-         <img
+    {/* Responsive Layout: Scroll on small screens, grid on larger screens */}
+    <div className="mt-4 flex md:grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 overflow-x-auto scrollbar-hide">
+      {Object.entries(destinations).map(([titttle, dest]) => (
+        <div
+          key={titttle}
+          className="border rounded-lg overflow-hidden shadow-sm min-w-[80%] sm:min-w-[45%] md:min-w-0 max-w-[400px] flex-shrink-0"
+        >
+          <img
             src={dest.poster.image}
             alt={dest.poster.title}
             onClick={() => navigate(`/pic/${dest.poster.tittle}/${dest.poster.country}`)}
@@ -31,16 +35,16 @@ const DestinationSection = ({ title, destinations, navigate, call, whatsapp }) =
               <FaStar /> {dest.poster.rating} ({dest.poster.reviews})
             </div>
             <h3 className="text-md font-semibold mt-1">{dest.poster.title}</h3>
-            <p className="text-xs mt-2 bg-gray-100 p-1 inline-block rounded-md">{dest.poster.duration}</p>
+            <p className="text-xs mt-2 bg-gray-100 p-1 inline-block rounded-md">
+              {dest.poster.duration}
+            </p>
 
-            
             <div className="mt-3">
               <p className="text-lg font-bold text-gray-800">{dest.poster.price}</p>
               <p className="text-sm line-through text-gray-500">{dest.poster.originalPrice}</p>
               <p className="text-green-600 text-sm font-semibold">{dest.poster.discount}</p>
             </div>
 
-            
             <div className="flex gap-3 mt-3">
               <Button variant="outlined" onClick={call} startIcon={<FaPhoneAlt />} color="warning">
                 Call
@@ -48,13 +52,14 @@ const DestinationSection = ({ title, destinations, navigate, call, whatsapp }) =
               <Button variant="contained" onClick={whatsapp} color="warning">
                 Request Callback
               </Button>
-            </div> 
-          </div> 
+            </div>
+          </div>
         </div>
       ))}
     </div>
   </section>
 );
+
 
 const ThrillophiliaClone = () => {
   const navigate = useNavigate();

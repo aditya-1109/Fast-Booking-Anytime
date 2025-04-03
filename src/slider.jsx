@@ -130,55 +130,60 @@ const ImageSlider = ({ country }) => {
   if (!dataa.length) return <div>Loading...</div>; // Prevents rendering errors
 
   return (
-    <div className="relative w-screen h-screen">
-      <div
-        className="w-full h-full bg-cover bg-center transition-all duration-700"
-        style={{ backgroundImage: `url(${dataa[currentIndex]?.image})` }}
-      >
-        {/* Overlay */}
-        <div className="absolute inset-0 bg-[rgba(0,0,0,0.3)] flex flex-col items-center justify-center text-center text-white px-6">
-          <h2 className="text-4xl md:text-5xl font-bold">
-            {dataa[currentIndex]?.title}
-          </h2>
+    <div className="relative w-full h-screen">
+  <div
+    className="w-full h-full bg-cover bg-center transition-all duration-700"
+    style={{ backgroundImage: `url(${dataa[currentIndex]?.image})` }}
+  >
+    {/* Overlay */}
+    <div className="absolute inset-0 bg-[rgba(0,0,0,0.3)] flex flex-col items-center justify-center text-center text-white px-4 sm:px-8">
+      <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold">
+        {dataa[currentIndex]?.title}
+      </h2>
 
-          <p className="mt-2 text-lg md:text-xl">
-            Get up to{" "}
-            <span className="bg-yellow-400 text-black px-2 py-1 rounded">
-              {dataa[currentIndex]?.discount}
-            </span>{" "}
-            on {country} Activities
-          </p>
-          <p className="mt-2 text-lg">
-            Activities starting from{" "}
-            <span className="font-bold text-xl">{dataa[currentIndex]?.price}</span>{" "}
-            <span className="line-through text-gray-300">
-              {dataa[currentIndex]?.oldPrice}
-            </span>
-          </p>
-          <Button
-            variant="contained"
-            color="warning"
-            className="mt-4 bg-orange-500 px-6 py-2 rounded-full"
-          >
-            Connect With An Expert
-          </Button>
-        </div>
-      </div>
+      <p className="mt-2 text-base sm:text-lg md:text-xl">
+        Get up to{" "}
+        <span className="bg-yellow-400 text-black px-2 py-1 rounded">
+          {dataa[currentIndex]?.discount}
+        </span>{" "}
+        on {country} Activities
+      </p>
+      
+      <p className="mt-2 text-base sm:text-lg">
+        Activities starting from{" "}
+        <span className="font-bold text-lg sm:text-xl">
+          {dataa[currentIndex]?.price}
+        </span>{" "}
+        <span className="line-through text-gray-300 text-sm sm:text-base">
+          {dataa[currentIndex]?.oldPrice}
+        </span>
+      </p>
 
-      {/* Navigation Buttons */}
-      <button
-        className="absolute left-5 top-1/2 transform -translate-y-1/2 bg-gray-800 bg-opacity-20 text-white p-3 rounded-full"
-        onClick={prevSlide}
+      <Button
+        variant="contained"
+        color="warning"
+        className="mt-4 bg-orange-500 px-6 py-2 sm:px-8 sm:py-3 rounded-full"
       >
-        <ArrowBackIos />
-      </button>
-      <button
-        className="absolute right-5 top-1/2 transform -translate-y-1/2 bg-gray-800 bg-opacity-20 text-white p-3 rounded-full"
-        onClick={nextSlide}
-      >
-        <ArrowForwardIos />
-      </button>
+        Connect With An Expert
+      </Button>
     </div>
+  </div>
+
+  {/* Navigation Buttons */}
+  <button
+    className="absolute left-3 sm:left-5 top-1/2 transform -translate-y-1/2 bg-gray-800 bg-opacity-30 hover:bg-opacity-50 text-white p-2 sm:p-3 rounded-full transition"
+    onClick={prevSlide}
+  >
+    <ArrowBackIos className="text-sm sm:text-base" />
+  </button>
+  <button
+    className="absolute right-3 sm:right-5 top-1/2 transform -translate-y-1/2 bg-gray-800 bg-opacity-30 hover:bg-opacity-50 text-white p-2 sm:p-3 rounded-full transition"
+    onClick={nextSlide}
+  >
+    <ArrowForwardIos className="text-sm sm:text-base" />
+  </button>
+</div>
+
   );
 };
 

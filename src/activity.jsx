@@ -191,21 +191,66 @@ const ThingsToDoInDubai = () => {
   const {country}= useParams();
   
   return (
-    <Box sx={{display: "flex", position:"absolute", justifyContent: "flex-start", width:"100vw", left: 0, top:0, flexDirection: "column", alignItems: "flex-start"}}>
-    <Header />
-    <ImageSlider country={country} />
-    <Box className="container w-1000 px-4 py-8" sx={{display: "flex", flexDirection: "column", justifyContent: "flex-start", alignItems: "flex-start"}}>
-      <Typography variant="h5" className="mb-5 font-bold flex items-center gap-2" sx={{fontWeight: 600, fontSize: "20px", color: "grey"}}>
-         {activities[country].title}
-      </Typography>
+    <Box 
+  sx={{ 
+    display: "flex", 
+    position: "absolute", 
+    justifyContent: "flex-start", 
+    width: "100%", 
+    left: 0, 
+    top: 0, 
+    flexDirection: "column", 
+    alignItems: "flex-start" 
+  }}
+>
+  <Header />
+  <ImageSlider country={country} />
 
-      <Navbar />
-      
+  <Box 
+    className="container px-4 py-8"
+    sx={{ 
+      width: "100%", 
+      maxWidth: "1200px", 
+      margin: "0 auto", 
+      display: "flex", 
+      flexDirection: "column", 
+      justifyContent: "flex-start", 
+      alignItems: "flex-start" 
+    }}
+  >
+    <Typography 
+      variant="h5" 
+      className="mb-5 font-bold flex items-center gap-2"
+      sx={{ 
+        fontWeight: 600, 
+        fontSize: { xs: "16px", sm: "18px", md: "20px" }, 
+        color: "grey" 
+      }}
+    >
+      {activities[country].title}
+    </Typography>
+
+    <Navbar />
+
+    <Grid 
+      container 
+      spacing={3} 
+      sx={{ 
+        width: "100%", 
+        display: "flex", 
+        flexWrap: "wrap", 
+        justifyContent: "center" 
+      }}
+    >
       {activities[country].map((activity, index) => (
-        <ActivityCard key={index} activity={activity} />
+        <Grid item xs={12} sm={6} md={4} key={index}>
+          <ActivityCard activity={activity} />
+        </Grid>
       ))}
-    </Box>
-    </Box>
+    </Grid>
+  </Box>
+</Box>
+
   );
 };
 
