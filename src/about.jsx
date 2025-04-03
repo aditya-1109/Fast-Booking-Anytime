@@ -28,7 +28,7 @@ const HeroSection = () => {
             Our <span className="text-orange-500">Mission</span>
           </Typography>
           <Typography variant="body1" className="text-gray-600 mt-4">
-            At Thrillophilia, we're on a grand quest to transform the landscape of travel experiences.
+            At Fast Booking Anytime, we're on a grand quest to transform the landscape of travel experiences.
             Our aspiration goes beyond destinations—we endeavor to spark passion, carve everlasting memories,
             and lead the way in crafting adventures that echo in the hearts of every explorer.
           </Typography>
