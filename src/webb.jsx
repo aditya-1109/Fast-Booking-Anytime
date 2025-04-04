@@ -17,31 +17,33 @@ const DestinationSection = ({ title, destinations, navigate, call, whatsapp }) =
     </div>
     <div className="flex gap-4 mt-4 overflow-x-auto whitespace-nowrap scrollbar-hide">
     {Object.entries(destinations).map(([titttle, dest])=> (
-        <div key={titttle} className="border rounded-lg overflow-hidden shadow-sm min-w-1/3 max-w-[400px]">
+        <div key={titttle} className="overflow-hidden shadow-sm min-w-1/3 max-w-[400px]">
 
          <img
             src={dest.poster.image}
             alt={dest.poster.title}
             onClick={() => navigate(`/pic/${dest.poster.tittle}/${dest.poster.country}`)}
-            className="w-full h-48 object-cover cursor-pointer"
+            className="w-100 h-100 object-cover cursor-pointer rounded-lg"
           />
           <div className="p-4">
-            <p className="text-gray-500 text-sm">{dest.poster.days}</p>
-            <div className="flex items-center gap-1 text-green-600 text-sm">
-              <FaStar /> {dest.poster.rating} ({dest.poster.reviews})
-            </div>
+          <div className="flex justify-between items-center">
+  <p className="text-gray-500 text-sm">{dest.poster.days}</p>
+  <div className="flex items-center gap-1 text-green-600 text-sm">
+    <FaStar /> {dest.poster.rating} ({dest.poster.reviews})
+    </div>
+  </div>
             <h3 className="text-md font-semibold mt-1">{dest.poster.title}</h3>
             <p className="text-xs mt-2 bg-gray-100 p-1 inline-block rounded-md">{dest.poster.duration}</p>
 
             
-            <div className="mt-3">
+            <div className="mt-3 flex flex-row items-center gap-2">
               <p className="text-lg font-bold text-gray-800">{dest.poster.price}</p>
               <p className="text-sm line-through text-gray-500">{dest.poster.originalPrice}</p>
               <p className="text-green-600 text-sm font-semibold">{dest.poster.discount}</p>
             </div>
 
             
-            <div className="flex gap-3 mt-3">
+            <div className="flex justify-between mt-3">
               <Button variant="outlined" onClick={call} startIcon={<FaPhoneAlt />} color="#049a9b">
                 Call
               </Button>
@@ -83,7 +85,7 @@ const ThrillophiliaClone = () => {
 
   return (
     <div className="w-full bg-white">
-      <Header />
+     
       <MenuBar />
 
       <div>
@@ -99,9 +101,7 @@ const ThrillophiliaClone = () => {
         ))}
       </div>
 
-      <div className="mt-40">
-        <Footer />
-      </div>
+
     </div>
   );
 };
