@@ -4,7 +4,6 @@ import { Button } from "@mui/material";
 import MenuBar from "./components/ui/menu";
 import { useNavigate, useParams } from "react-router-dom";
 import { pagesData } from "./data";
-import CallIcon from '@mui/icons-material/Call';
 
 const DestinationSection = ({ title, destinations, navigate, call, whatsapp }) => (
   <section className="p-6">

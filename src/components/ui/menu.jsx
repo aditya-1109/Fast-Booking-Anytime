@@ -32,8 +32,8 @@ const MenuBar = () => {
   return (
     <Box className="sticky top-0 bg-white shadow-sm border-b flex flex-col md:flex-row flex-wrap items-center justify-between px-4 md:px-6 py-3 z-50">
  {/* Explore Section */}
-      <Box className="flex items-center gap-2 md:gap-4 text-gray-700 text-sm px-4 relative">
-        {/* Explore Icon */}
+ <Box className="w-full md:w-3/4 flex items-center gap-2 md:gap-4 text-gray-700 text-sm px-2 md:px-4 relative overflow-x-auto" sx={{scrollbarWidth:"none"}}>
+ {/* Explore Icon */}
         <Typography variant="h7" sx={{ display: 'flex', alignItems: 'center', gap: 1, flexDirection:"column", cursor: 'pointer', color: 'rgba(4,154,155,255)', fontWeight: 'bold' }}>
           <WhatshotIcon sx={{ color: "orange" }} /><Box>Explore</Box> 
         </Typography>
@@ -101,7 +101,7 @@ const MenuBar = () => {
         <IconButton
           sx={{
             position: 'absolute',
-            right: -50,
+            right: 0,
             p: 1,
             backgroundColor: '#d3d3d3',
           
@@ -114,14 +114,10 @@ const MenuBar = () => {
       </Box>
 
       {/* Button Section */}
-      <Box className="flex items-center gap-4 border" sx={{
-    border: "1px solid #d3d3d3", 
-    borderRadius: "8px", 
-    padding: "8px", 
-  }}>
-        <Box className="hidden sm:flex gap-4">
-          <Button
-            variant="contained"
+     
+        <Box className="w-full md:w-auto mt-2 md:mt-0 flex items-center justify-center md:justify-end gap-4 border border-gray-300 rounded-md p-2">
+        <Button
+            variant="contained w-1/2"
             sx={{
               backgroundColor: "#049a9b",
               '&:hover': { backgroundColor: "#037f7f" },
@@ -130,7 +126,7 @@ const MenuBar = () => {
             Tours
           </Button>
           <Button
-            variant="outlined"
+            variant="outlined w-1/2"
             sx={{
               color: "#049a9b",
               borderColor: "#049a9b",
@@ -139,7 +135,7 @@ const MenuBar = () => {
             Activities
           </Button>
         </Box>
-      </Box>
+      
     </Box>
   );
 };
