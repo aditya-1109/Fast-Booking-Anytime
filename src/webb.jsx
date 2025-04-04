@@ -2,10 +2,9 @@ import React, { useEffect, useState } from "react";
 import { FaStar, FaPhoneAlt } from "react-icons/fa";
 import { Button } from "@mui/material";
 import MenuBar from "./components/ui/menu";
-import Footer from "./footer";
-import Header from "./components/ui/header";
 import { useNavigate, useParams } from "react-router-dom";
 import { pagesData } from "./data";
+import CallIcon from '@mui/icons-material/Call';
 
 const DestinationSection = ({ title, destinations, navigate, call, whatsapp }) => (
   <section className="p-6">
@@ -15,7 +14,7 @@ const DestinationSection = ({ title, destinations, navigate, call, whatsapp }) =
         View All ➜
       </Button>
     </div>
-    <div className="flex gap-4 mt-4 overflow-x-auto whitespace-nowrap scrollbar-hide">
+    <div className="flex gap-4 mt-4 overflow-x-auto whitespace-nowrap scrollbar-hide" style={{scrollbarWidth: "none"}}>
     {Object.entries(destinations).map(([titttle, dest])=> (
         <div key={titttle} className="overflow-hidden shadow-sm min-w-1/3 max-w-[400px]">
 
