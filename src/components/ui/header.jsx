@@ -11,7 +11,7 @@ export default function Header() {
   <img src="./images/logo.jpg" className="w-16 h-16 md:w-20 md:h-20" />
 
   {/* Search Bar */}
-  <div className="relative w-full max-w-md">
+  <div className="hidden md:block relative w-full max-w-md">
       <input
         type="text"
         placeholder="Search for Destinations"

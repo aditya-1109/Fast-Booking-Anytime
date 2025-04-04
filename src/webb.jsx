@@ -16,7 +16,7 @@ const DestinationSection = ({ title, destinations, navigate, call, whatsapp }) =
     </div>
     <div className="flex gap-4 mt-4 overflow-x-auto whitespace-nowrap scrollbar-hide" style={{scrollbarWidth: "none"}}>
     {Object.entries(destinations).map(([titttle, dest])=> (
-        <div key={titttle} className="overflow-hidden shadow-sm min-w-1/3 max-w-[400px]">
+        <div key={titttle} className="overflow-hidden shadow-sm min-w-100 max-w-[400px]">
 
          <img
             src={dest.poster.image}
@@ -42,8 +42,8 @@ const DestinationSection = ({ title, destinations, navigate, call, whatsapp }) =
             </div>
 
             
-            <div className="flex justify-between mt-3">
-              <Button variant="outlined" onClick={call} startIcon={<FaPhoneAlt />} color="#049a9b">
+            <div className="flex justify-between mt-3 flex-row">
+              <Button variant="outlined" startIcon={FaPhoneAlt} onClick={call} color="#049a9b">
                 Call
               </Button>
               <Button variant="contained" onClick={whatsapp} sx={{ backgroundColor: "#049a9b", '&:hover': { backgroundColor: "#037f7f" } }}>

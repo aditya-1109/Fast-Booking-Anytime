@@ -30,8 +30,8 @@ const MenuBar = () => {
   };
 
   return (
-    <Box className="sticky top-0 bg-white shadow-sm border-b flex flex-wrap items-center justify-between px-4 md:px-6 py-3 z-50 flex-col md:flex-row">
-      {/* Explore Section */}
+    <Box className="sticky top-0 bg-white shadow-sm border-b flex flex-col md:flex-row flex-wrap items-center justify-between px-4 md:px-6 py-3 z-50">
+ {/* Explore Section */}
       <Box className="flex items-center gap-2 md:gap-4 text-gray-700 text-sm px-4 relative">
         {/* Explore Icon */}
         <Typography variant="h7" sx={{ display: 'flex', alignItems: 'center', gap: 1, flexDirection:"column", cursor: 'pointer', color: 'rgba(4,154,155,255)', fontWeight: 'bold' }}>
