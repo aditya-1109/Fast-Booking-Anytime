@@ -32,8 +32,8 @@ const DubaiTourPage = () => {
     
   return (
     <>
-    <Header />
-    <div className="relative w-full mx-auto mt-10 p-4 shadow-lg rounded-lg bg-white">
+  
+    <div className="relative w-full mx-auto mt-10 p-4 shadow-lg rounded-lg bg-white" style={{width:"100vw"}}>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <img src={dataa[tittle]?.images[0]} alt="Dubai" className="rounded-lg w-full h-64 md:h-96 object-cover" />
@@ -164,7 +164,7 @@ const DubaiTourPage = () => {
           </div>
         </div>
       </div>
-      <Footer className="mt-20"/>
+      
     </div>
 </>
 

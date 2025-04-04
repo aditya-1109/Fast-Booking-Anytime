@@ -196,14 +196,14 @@ const ThingsToDoInDubai = () => {
     display: "flex", 
     position: "absolute", 
     justifyContent: "flex-start", 
-    width: "100%", 
+    width: "100vw", 
     left: 0, 
     top: 0, 
     flexDirection: "column", 
     alignItems: "flex-start" 
   }}
 >
-  <Header />
+  
   <ImageSlider country={country} />
 
   <Box 

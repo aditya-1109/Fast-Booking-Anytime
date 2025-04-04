@@ -8,8 +8,8 @@ import { pagesData } from "./data";
 const DestinationSection = ({ title, destinations, navigate, call, whatsapp }) => (
   <section className="p-6">
     <div className="flex justify-between items-center">
-      <h2 className="text-2xl font-semibold">{title}</h2>
-      <Button variant="text" onClick={() => navigate(`/view/${title}`)} color="#049a9b">
+      <h2 className="text-2xl text-black font-semibold">{title}</h2>
+      <Button variant="text" onClick={() => navigate(`/view/${title}`)} color="#049a9b" sx={{color:"#049a9b"}}>
         View All ➜
       </Button>
     </div>
@@ -42,7 +42,7 @@ const DestinationSection = ({ title, destinations, navigate, call, whatsapp }) =
 
             
             <div className="flex justify-between mt-3 flex-row">
-              <Button variant="outlined" startIcon={FaPhoneAlt} onClick={call} color="#049a9b">
+              <Button variant="outlined" startIcon={<FaPhoneAlt />} onClick={call} color="#049a9b" sx={{color: "#049a9b"}}>
                 Call
               </Button>
               <Button variant="contained" onClick={whatsapp} sx={{ backgroundColor: "#049a9b", '&:hover': { backgroundColor: "#037f7f" } }}>
