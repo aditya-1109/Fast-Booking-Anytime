@@ -8,15 +8,15 @@ import Header from './components/ui/header';
 import Footer from "./footer";
 
 
-const Layout=()=>{
-  return(
-    <>
-    <Header />
-    <Outlet />
-    <Footer />
-    </>
-  )
-}
+const Layout = () => {
+  return (
+    <div className="bg-white mx-auto w-full max-w-[1440px] px-4 sm:px-6 lg:px-8">
+      <Header />
+      <Outlet />
+      <Footer />
+    </div>
+  );
+};
 
 function App() {
   return (

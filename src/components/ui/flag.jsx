@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Dialog, DialogTitle, DialogContent, TextField, IconButton } from "@mui/material";
+import { Dialog, DialogTitle, DialogContent, TextField, IconButton, Button } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import Flag from "react-world-flags";
@@ -39,13 +39,16 @@ const CurrencyPicker = () => {
   return (
     <>
       {/* Trigger Button */}
-      <button
-        onClick={() => setOpen(true)}
-        className="flex items-center gap-2 text-gray-700 text-sm font-semibold hover:text-black"
-      >
-        <Flag code={usedflag.code} style={{ width: 24, height: 16, borderRadius: 2 }} />
-        <p>{usedflag.currency}{usedflag.symbol} </p><KeyboardArrowDownIcon fontSize="small" />
-      </button>
+      <Button
+  onClick={() => setOpen(true)}
+  className="flex items-center gap-2 text-black text-sm font-semibold hover:text-black"
+>
+  <Flag code={usedflag.code} style={{ width: 24, height: 16, borderRadius: 2 }} />
+  <p>{usedflag.currency}{usedflag.symbol}</p>
+  <KeyboardArrowDownIcon fontSize="small" />
+</Button>
+
+
 
       {/* Currency Picker Modal */}
       <Dialog open={open} onClose={() => setOpen(false)} fullWidth maxWidth="sm">

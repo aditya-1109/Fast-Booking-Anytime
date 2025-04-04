@@ -1,5 +1,5 @@
-import React, {useRef} from "react";
-import { Button } from "@mui/material";
+import React, { useRef } from "react";
+import { Button, IconButton, Box, Typography } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import WhatshotIcon from "@mui/icons-material/Whatshot"; // Explore Icon
 import LandscapeIcon from "@mui/icons-material/Landscape"; // Ladakh
@@ -28,60 +28,119 @@ const MenuBar = () => {
   const scrollRight = () => {
     scrollRef.current.scrollBy({ left: 200, behavior: 'smooth' });
   };
+
   return (
-    <div className="sticky top-0 bg-white shadow-sm border-b flex flex-wrap items-center justify-between px-4 md:px-6 py-3 z-50 flex-col md:flex-row">
+    <Box className="sticky top-0 bg-white shadow-sm border-b flex flex-wrap items-center justify-between px-4 md:px-6 py-3 z-50 flex-col md:flex-row">
       {/* Explore Section */}
-      <div className="flex items-center gap-2 md:gap-4 text-gray-700 text-sm px-4 relative">
-      {/* Explore Icon */}
-      <span className="text-[rgba(4,154,155,255)] font-bold flex items-center gap-1 cursor-pointer whitespace-nowrap">
-        <WhatshotIcon sx={{ color: "orange" }} /> Explore
-      </span>
+      <Box className="flex items-center gap-2 md:gap-4 text-gray-700 text-sm px-4 relative">
+        {/* Explore Icon */}
+        <Typography variant="h7" sx={{ display: 'flex', alignItems: 'center', gap: 1, flexDirection:"column", cursor: 'pointer', color: 'rgba(4,154,155,255)', fontWeight: 'bold' }}>
+          <WhatshotIcon sx={{ color: "orange" }} /><Box>Explore</Box> 
+        </Typography>
 
-      {/* Scrollable Destination List */}
-      <div
-        ref={scrollRef}
-        className="flex gap-4 md:gap-6 overflow-x-auto scrollbar-hide whitespace-nowrap max-w-[85%] scroll-smooth"
-      >
-        {destinations.map((dest, index) => (
-          <span
-            key={index}
-            onClick={() => navigate(`/country/${dest.name}`)}
-            className="flex items-center gap-1 cursor-pointer hover:text-[rgba(4,154,155,255)] min-w-max"
+        {/* Scrollable Destination List */}
+        <Box
+  ref={scrollRef}
+  sx={{
+    display: "flex",
+    gap: 4,
+    overflowX: "auto",
+    maxWidth: "85%",
+    whiteSpace: "nowrap",
+    scrollbarWidth: "none", /* Firefox */
+    msOverflowStyle: "none", /* Internet Explorer 10+ */
+    "&::-webkit-scrollbar": { display: "none" }, /* Webkit browsers */
+    scrollBehavior: "smooth",
+  }}
+>
+  {destinations.map((dest, index) => (
+    <Box
+      key={index}
+      onClick={() => navigate(`/country/${dest.name}`)}
+      sx={{
+        position: "relative", // Needed for absolute positioning
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        gap: 1,
+        cursor: "pointer",
+        "&:hover": { color: "rgba(4,154,155,255)" },
+      }}
+    >
+      {/* Trending Tag */}
+      {dest.trending && (
+        <Box
+          sx={{
+            position: "absolute",
+            top: "0px", // Moves above the icon
+            left: "30px", // Aligns to the left
+            backgroundColor: "#049a9b",
+            color: "white",
+            fontSize: "7px",
+            fontWeight: "bold",
+            padding: "1px 2px",
+            borderRadius: "2px",
+            
+          }}
+        >
+          Trending
+        </Box>
+      )}
+
+      {/* Destination Icon */}
+      {React.cloneElement(dest.icon, { sx: { fontSize: 30, color: "gray" } })}
+
+      {/* Destination Name */}
+      <Typography variant="body2">{dest.name}</Typography>
+    </Box>
+  ))}
+</Box>
+
+
+        {/* Scroll Arrow */}
+        <IconButton
+          sx={{
+            position: 'absolute',
+            right: -50,
+            p: 1,
+            backgroundColor: '#d3d3d3',
+          
+            '&:hover': { backgroundColor: '#f5f5f5' },
+          }}
+          onClick={scrollRight}
+        >
+          <ArrowForwardIosIcon fontSize="small" />
+        </IconButton>
+      </Box>
+
+      {/* Button Section */}
+      <Box className="flex items-center gap-4 border" sx={{
+    border: "1px solid #d3d3d3", 
+    borderRadius: "8px", 
+    padding: "8px", 
+  }}>
+        <Box className="hidden sm:flex gap-4">
+          <Button
+            variant="contained"
+            sx={{
+              backgroundColor: "#049a9b",
+              '&:hover': { backgroundColor: "#037f7f" },
+            }}
           >
-            {React.cloneElement(dest.icon, {
-              sx: { fontSize: 30, color: "gray" },
-            })}
-            {dest.name}
-            {dest.trending && (
-              <span className="bg-[rgba(4,154,155,255)] text-white text-xs px-2 py-0.5 rounded-md">
-                Trending
-              </span>
-            )}
-          </span>
-        ))}
-      </div>
-
-      {/* Scroll Arrow */}
-      <button
-        className="absolute right-2 p-1 rounded-full bg-white shadow-md hover:bg-gray-100"
-        onClick={scrollRight}
-      >
-        <ArrowForwardIosIcon fontSize="small" />
-      </button>
-    </div>
-
-      
-      <div className="flex items-center gap-4">
-        <div className="hidden sm:flex gap-4">
-          <Button variant="contained" sx={{ backgroundColor: "#049a9b", '&:hover': { backgroundColor: "#037f7f" } }}>
             Tours
           </Button>
-          <Button variant="outlined" sx={{ color: "#049a9b", borderColor: "#049a9b" }}>
+          <Button
+            variant="outlined"
+            sx={{
+              color: "#049a9b",
+              borderColor: "#049a9b",
+            }}
+          >
             Activities
           </Button>
-        </div>
-      </div>
-    </div>
+        </Box>
+      </Box>
+    </Box>
   );
 };
 
