@@ -10,7 +10,7 @@ import Footer from "./footer";
 
 const Layout = () => {
   return (
-    <div className="bg-white mx-auto w-full max-w-[1440px] px-4 sm:px-6 lg:px-8" style={{width: "100vw"}}>
+    <div className="bg-white overflow-x-hidden" style={{width: "100vw"}}>
       <Header />
       <Outlet />
       <Footer />
