@@ -24,10 +24,10 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<ThrillophiliaClone />} />
+          <Route path="/about/" element={<HeroSection />} />
           <Route path="/country/:countryName" element={<ThrillophiliaClone />} />
           <Route path="/view/:country" element={<ThingsToDoInDubai />} />
           <Route path='/pic/:tittle/:country' element={<DubaiTourCard />} />
-          <Route path="/about" element={<HeroSection />} />
         </Route>
       </Routes>
     </Router>
