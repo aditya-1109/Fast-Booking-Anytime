@@ -1,8 +1,11 @@
 import React from "react";
 import { Box, Typography, Grid, Link, IconButton } from "@mui/material";
 import { Facebook, Instagram, Twitter, LinkedIn, YouTube } from "@mui/icons-material";
+import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
+
+  const navigate=useNavigate();
   return (
     <Box className="bg-gray-900 text-white py-10 px-5 mt-40" sx={{ display: "flex", justifyContent: "center", flexDirection: "column", alignItems: "center" }}>
   <Grid 
@@ -24,7 +27,7 @@ const Footer = () => {
       <ul className="space-y-2 mt-2">
         {["About Us", "We Are Hiring", "Fast Booking Anytime Reviews", "Terms & Conditions", "Privacy Policies", "Support"].map((item) => (
           <li key={item}>
-            <Link href={(item==="About Us")?"/about":"#"} className="text-gray-500 hover:text-black text-sm">{item}</Link>
+            <div onClick={()=>{navigate(`/${item}`)}} className="text-gray-500 hover:text-black text-sm">{item}</div>
           </li>
         ))}
         <li className="text-red-500"><Link href="#" className="font-semibold text-sm">⚠ Beware of Frauds</Link></li>
