@@ -5,14 +5,14 @@ import { ArrowBackIos, ArrowForwardIos } from "@mui/icons-material";
 const slides = {
   Dubai: [
     {
-      image: "./images/dubai04.jpg",
+      image: "/images/dubai04.jpg",
       title: "Things to do in DUBAI",
       discount: "40% off",
       price: "INR 560",
       oldPrice: "INR 1120",
     },
     {
-      image: "./images/dubai05.jpg",
+      image: "/images/dubai05.jpg",
       title: "Explore the Wonders",
       discount: "30% off",
       price: "INR 700",
@@ -21,14 +21,14 @@ const slides = {
   ],
   Singapoore: [
     {
-      image: "./images/singapore05.jpg",
+      image: "/images/singapore05.jpg",
       title: "Discover Singapore’s Marvels",
       discount: "35% off",
       price: "INR 650",
       oldPrice: "INR 1000",
     },
     {
-      image: "./images/singapore06.jpg",
+      image: "/images/singapore06.jpg",
       title: "Gardens by the Bay Tour",
       discount: "25% off",
       price: "INR 750",
@@ -37,14 +37,14 @@ const slides = {
   ],
   Bhutan: [
     {
-      image: "./images/bhu05.jpg",
+      image: "/images/bhu05.jpg",
       title: "Himalayan Escape in Bhutan",
       discount: "40% off",
       price: "INR 560",
       oldPrice: "INR 1120",
     },
     {
-      image: "./images/bhu06.jpg",
+      image: "/images/bhu06.jpg",
       title: "Tiger’s Nest Monastery Trek",
       discount: "30% off",
       price: "INR 700",
@@ -53,14 +53,14 @@ const slides = {
   ],
   Bali: [
     {
-      image: "./images/bali07.jpg",
+      image: "/images/bali07.jpg",
       title: "Serene Bali Beach Getaway",
       discount: "35% off",
       price: "INR 650",
       oldPrice: "INR 1000",
     },
     {
-      image: "./images/bali05.jpg",
+      image: "/images/bali05.jpg",
       title: "Ubud’s Cultural Wonders",
       discount: "20% off",
       price: "INR 800",
@@ -69,14 +69,14 @@ const slides = {
   ],
   Thailand: [
     {
-      image: "./images/thai06.jpg",
+      image: "/images/thai06.jpg",
       title: "Bangkok’s Grand Palace Tour",
       discount: "30% off",
       price: "INR 700",
       oldPrice: "INR 1000",
     },
     {
-      image: "./images/thai08.jpg",
+      image: "/images/thai08.jpg",
       title: "Phuket Island Adventure",
       discount: "25% off",
       price: "INR 750",
@@ -85,14 +85,14 @@ const slides = {
   ],
   USA: [
     {
-      image: "./images/usa09.jpg",
+      image: "/images/usa09.jpg",
       title: "Explore the Grand Canyon",
       discount: "40% off",
       price: "INR 560",
       oldPrice: "INR 1120",
     },
     {
-      image: "./images/usa10.jpg",
+      image: "/images/usa10.jpg",
       title: "New York City Sightseeing",
       discount: "30% off",
       price: "INR 700",
