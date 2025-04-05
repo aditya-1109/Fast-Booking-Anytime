@@ -27,7 +27,7 @@ function App() {
           <Route path="/country/:countryName" element={<ThrillophiliaClone />} />
           <Route path="/view/:country" element={<ThingsToDoInDubai />} />
           <Route path='/pic/:tittle/:country' element={<DubaiTourCard />} />
-          <Route path='/about us' element={<HeroSection />} />
+          <Route path='/about Us' element={<HeroSection />} />
         </Route>
       </Routes>
     </Router>
