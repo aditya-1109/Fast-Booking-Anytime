@@ -30,7 +30,7 @@ const Footer = () => {
             <div onClick={()=>{navigate(`/${item}`)}} className="text-gray-500 hover:text-black text-sm">{item}</div>
           </li>
         ))}
-        <li className="text-red-500"><Link href="#" className="font-semibold text-sm">⚠ Beware of Frauds</Link></li>
+        <li className="text-red-500"><div href="#" className="font-semibold text-sm">⚠ Beware of Frauds</div></li>
       </ul>
     </Grid>
 
@@ -38,13 +38,13 @@ const Footer = () => {
     <Grid item xs={12} sm={6} md={3}>
       <Typography variant="h6" className="text-sm text-black font-semibold">FOR SUPPLIERS</Typography>
       <ul className="space-y-2 mt-2">
-        <li><Link href="#" className="text-gray-500 hover:text-black text-sm">List Your Activities</Link></li>
+        <li><div href="#" className="text-gray-500 hover:text-black text-sm">List Your Activities</div></li>
       </ul>
       <Typography variant="h6" className="text-sm text-black font-semibold mt-4">FOR BRANDS</Typography>
       <ul className="space-y-2 mt-2">
         {["Partner With Us", "Destination Marketing"].map((item) => (
           <li key={item}>
-            <Link href="#" className="text-gray-500 hover:text-black text-sm">{item}</Link>
+            <div href="#" className="text-gray-500 hover:text-black text-sm">{item}</div>
           </li>
         ))}
       </ul>
@@ -54,7 +54,7 @@ const Footer = () => {
     <Grid item xs={12} sm={6} md={3}>
       <Typography variant="h6" className="text-sm text-black font-semibold">FOR TRAVELLERS</Typography>
       <ul className="space-y-2 mt-2">
-        <li><Link href="#" className="text-gray-500 hover:text-black text-sm">Gift An Experience</Link></li>
+        <li><div href="#" className="text-gray-500 hover:text-black text-sm">Gift An Experience</div></li>
       </ul>
     </Grid>
 
