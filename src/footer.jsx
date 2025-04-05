@@ -24,7 +24,7 @@ const Footer = () => {
       <ul className="space-y-2 mt-2">
         {["About Us", "We Are Hiring", "Fast Booking Anytime Reviews", "Terms & Conditions", "Privacy Policies", "Support"].map((item) => (
           <li key={item}>
-            <Link href={`/${item}`} className="text-gray-500 hover:text-black text-sm">{item}</Link>
+            <Link href={(item==="About Us")?"/about":"#"} className="text-gray-500 hover:text-black text-sm">{item}</Link>
           </li>
         ))}
         <li className="text-red-500"><Link href="#" className="font-semibold text-sm">⚠ Beware of Frauds</Link></li>
