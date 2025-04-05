@@ -1,5 +1,6 @@
 import { Typography, Button, Card, CardContent, Grid } from "@mui/material";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
+import VisitorReviews from "./components/video";
 
 
 const locations = [
@@ -195,14 +196,31 @@ const HeroSection = () => {
         </Grid>
       </Grid>
     </div>
+
+    <div className="bg-gray-100 py-16 px-4 md:px-20 rounded-2xl mt-16">
+      <Typography
+        variant="h4"
+        className="text-center mb-12 uppercase"
+        sx={{
+          color: "#049a9b",
+          fontWeight: "700",
+          fontSize: { xs: "24px", md: "30px" },
+          letterSpacing: "1px",
+        }}
+      >
+        Visitors Reviews Videos
+      </Typography>
+
+      <VisitorReviews />
+    </div>
   
 
     <div className="bg-white text-center px-4 md:px-20 py-14">
-      <Typography variant="h5" className="font-semibold mb-10 uppercase">
+      <Typography variant="h5" className="font-semibold mb-10 uppercase" sx={{color:"#049a9b", fontWeight: "700", fontSize: "30px"}}>
         Our Presence
       </Typography>
 
-      <Grid container spacing={6} justifyContent="center">
+      <Grid container spacing={6} justifyContent="center" className="mt-20">
         {locations.map((loc, index) => (
           <Grid item xs={12} md={4} key={index}>
             <div className="flex flex-col items-center">
