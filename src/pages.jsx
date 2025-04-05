@@ -23,12 +23,13 @@ const DubaiTourPage = () => {
     
     useEffect(()=>{
       setData(pagesData[country])
+      
     },[country])
   
     const handleTabChange = (_, newValue) => setSelectedTab(newValue);
     const prevImage = () => setCurrentImage((prev) => (prev === 0 ? dataa.tittle?.belowImages.length - 1 : prev - 1));
     const nextImage = () => setCurrentImage((prev) => (prev === dataa.tittle?.belowImages.length - 1 ? 0 : prev + 1));
-
+  
     
   return (
     <>
@@ -146,9 +147,11 @@ const DubaiTourPage = () => {
             <h3 className="text-lg font-semibold mb-2">Inclusions ✅</h3>
             <ul className="list-none space-y-2">
               {dataa[tittle]?.inclusions.map((item, index) => (
-                <li key={index} className="flex items-center">
-                  <span className="text-green-500 mr-2">✔</span> {item}
-                </li>
+                <li key={index} className="flex items-left">
+                <span className="text-green-500 mr-2">✔</span>
+                <span className="text-gray-800 text-left">{item}</span>
+              </li>
+              
               ))}
             </ul>
           </div>
@@ -157,7 +160,7 @@ const DubaiTourPage = () => {
             <ul className="list-none space-y-2">
               {dataa[tittle]?.exclusions.map((item, index) => (
                 <li key={index} className="flex items-center">
-                  <span className="text-red-500 mr-2">✖</span> {item}
+                  <span className="text-red-500 mr-2">✖</span> <span className="text-gray-800 text-left">{item}</span>
                 </li>
               ))}
             </ul>
