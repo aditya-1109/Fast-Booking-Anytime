@@ -197,18 +197,7 @@ const HeroSection = () => {
     </div>
 
     <div className="bg-gray-100 py-16 px-4 md:px-20 rounded-2xl mt-16">
-      <Typography
-        variant="h4"
-        className="text-center mb-12 uppercase"
-        sx={{
-          color: "#049a9b",
-          fontWeight: "700",
-          fontSize: { xs: "24px", md: "30px" },
-          letterSpacing: "1px",
-        }}
-      >
-        Visitors Reviews Videos
-      </Typography>
+      
 
       <VisitorReviews />
     </div>
