@@ -1,5 +1,4 @@
 import { Typography, Button, Card, CardContent, Grid } from "@mui/material";
-import LocationOnIcon from "@mui/icons-material/LocationOn";
 import VisitorReviews from "./components/video";
 
 
