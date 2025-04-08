@@ -4,21 +4,12 @@ import VisitorReviews from "./components/video";
 
 const locations = [
   {
-    city: "Jaipur, India",
-    address: "Sitapura Industrial Area, Sitapura, Jaipur, Rajasthan, 302022",
-    icon: "/images/jaipur.PNG", // Replace with actual icon
+    city: "Delhi, India",
+    address: "A 28 najafgarh road uttam nagar metro piller no 644, Delhi, 110059",
+    icon: "/images/jaipur.PNG", 
+  
   },
-  {
-    city: "Dubai, UAE",
-    address: "Dubai Silicon Oasis, DDP, Building A, Dubai, United Arab Emirates",
-    icon: "/images/dubai.PNG", // Replace with actual icon
-  },
-  {
-    city: "Delaware, USA",
-    address:
-      "Suite 403-B, 1013 Centre Road, Wilmington, New Castle, Delaware, 19805-1270",
-    icon: "/images/delware.PNG", // Replace with actual icon
-  },
+ 
 ];
 
 
@@ -74,14 +65,10 @@ const HeroSection = () => {
         {/* Team Members */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-6 mt-8">
           {[
-            { name: "Chitra Gurnani Daga", title: "CEO & Co-Founder", role: "The Show Runner", img: "/images/chitra.png" },
-            { name: "Abhishek Daga", title: "Co-Founder", role: "The Idea Box", img: "/images/abhishek.png" },
-            { name: "Tarun Dadlani", title: "Vice President - Growth", role: "Life of The Party", img: "/images/tarun.png" },
-            { name: "Abhishek Puri", title: "Vice President - Growth", role: "Man City Fan", img: "/images/puri.png" },
-            { name: "Rajdeep Mandrekar", title: "Head of Engineering", role: "The Poker Guy", img: "/images/rajdeep.png" },
-            { name: "Girdhar Singh Sodha", title: "SEO Manager", role: "Heavy Driver", img: "/images/girdhar.png" },
-            { name: "Ram Ratan Mishra", title: "Digital Marketing Manager", role: "Cognitive Maven", img: "/images/ram.png" },
-            { name: "Chitransh Singh", title: "Associate Vice President", role: "The Off-Roader", img: "/images/chitransh.png" },
+            { name: "Bala Saxena", title: "CEO & Founder", role: "The Stunner", img: "/images/founder.jpg" },
+            { name: "Shivani Bhatnagar", title: "HR-Head", role: "The Source", img: "/images/headhr.jpg" },
+            { name: "Prateek Gulia", title: "Manager", role: "The Shah", img: "/images/manager.jpg" },
+            
           ].map((member, index) => (
             <div key={index} className="flex flex-col items-center text-center">
               <img src={member.img} alt={member.name} className="w-24 h-24 md:w-32 md:h-32 rounded-full border-4 border-gray-200" />

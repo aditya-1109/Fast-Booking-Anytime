@@ -6,6 +6,7 @@ import DubaiTourCard from './pages';
 import HeroSection from './about';
 import Header from './components/ui/header';
 import Footer from "./footer";
+import Careers from './hire';
 
 
 const Layout = () => {
@@ -28,6 +29,7 @@ function App() {
           <Route path="/country/:countryName" element={<ThrillophiliaClone />} />
           <Route path="/view/:country" element={<ThingsToDoInDubai />} />
           <Route path='/pic/:tittle/:country' element={<DubaiTourCard />} />
+          <Route path='/We Are Hiring' element={<Careers />} />
         </Route>
         
       </Routes>
