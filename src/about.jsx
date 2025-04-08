@@ -1,5 +1,6 @@
 import { Typography, Button, Card, CardContent, Grid } from "@mui/material";
 import VisitorReviews from "./components/video";
+import { useNavigate } from "react-router-dom";
 
 
 const locations = [
@@ -16,6 +17,8 @@ const locations = [
 
 
 const HeroSection = () => {
+
+  const navigate= useNavigate();
   return (
     <div>
       {/* Shaping the Future of Travel Section */}
@@ -85,6 +88,7 @@ const HeroSection = () => {
             See yourself here?
           </div>
           <Button 
+          onClick={()=>navigate("/We Are Hiring")}
             variant="outlined" 
             sx={{ mt: 2, borderColor: "#049a9b", color: "#049a9b", "&:hover": { backgroundColor: "#ffe5b4" } }}
           >
@@ -233,6 +237,7 @@ const HeroSection = () => {
         <Button
           variant="contained"
           style={{backgroundColor: "#049a9b"}}
+          onClick={()=>navigate("/We Are Hiring")}
           className="text-white px-6 py-2 rounded-lg shadow-md hover:shadow-lg transition-all"
         >
           Join Our team!

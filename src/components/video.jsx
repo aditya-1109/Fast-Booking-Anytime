@@ -16,9 +16,10 @@ const VisitorReviews = () => {
     { video: "./videos/video11.MP4" },
     { video: "./videos/video12.MP4" },
     { video: "./videos/video13.MP4" },
-    { video: "./videos/video14.MP4" },
-    { video: "./videos/video15.MP4" },
-    { video: "./videos/video16.MP4" },
+    { video: "./videos/video14.mp4" },
+    { video: "./videos/video15.mp4" },
+    { video: "./videos/video16.mp4" },
+    { video: "./videos/video17.mp4" },
   ];
 
   const [playingStates, setPlayingStates] = useState(Array(videos.length).fill(true));

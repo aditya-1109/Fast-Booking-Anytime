@@ -6,8 +6,8 @@ import {Typography} from "@mui/material";
 
 const Careers = () => {
   return (
-    <div className="text-white">
-      {/* Hero Section */}
+    <div className="text-white" style={{width: "100vw", position: "relative"}}>
+      
       <div className="relative h-screen bg-black text-white">
         <div
           className="absolute inset-0 bg-cover bg-center opacity-80"
