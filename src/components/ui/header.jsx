@@ -12,7 +12,7 @@ export default function Header() {
   return (
     <header className="flex w-full bg-opacity-50 z-10 items-center justify-between px-4 md:px-10  max-w-screen-xl mx-auto">
   {/* Logo */}
-  <img onClick={()=>navigate("/")} src="./images/logo.jpg" className="w-16 h-16 md:w-20 md:h-20" />
+  <img onClick={()=>navigate("/")} src="./images/logo.png" className="w-16 h-16 md:w-20 md:h-20" />
 
   {/* Search Bar */}
   <div className="hidden md:block relative w-full max-w-md">

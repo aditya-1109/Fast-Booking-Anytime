@@ -52,7 +52,7 @@ const HeroSection = () => {
           </Typography>
         </div>
         <div className="w-full md:w-1/2 flex justify-center mt-8 md:mt-0">
-          <img src="/images/logo.jpg" alt="Founders" className="w-80 md:w-96" />
+          <img src="/images/logo.png" alt="Founders" className="w-80 md:w-96" />
         </div>
       </div>
 
@@ -65,36 +65,7 @@ const HeroSection = () => {
           We are a power-packed tribe of <span className="font-bold" style={{color: "#049a9b"}}>800+</span> extraordinarily talented & passionate professionals.
         </Typography>
 
-        {/* Team Members */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-6 mt-8">
-          {[
-            { name: "Bala Saxena", title: "CEO & Founder", role: "The Stunner", img: "/images/founder.jpg" },
-            { name: "Shivani Bhatnagar", title: "HR-Head", role: "The Source", img: "/images/headhr.jpg" },
-            { name: "Prateek Gulia", title: "Manager", role: "The Shah", img: "/images/manager.jpg" },
-            
-          ].map((member, index) => (
-            <div key={index} className="flex flex-col items-center text-center">
-              <img src={member.img} alt={member.name} className="w-24 h-24 md:w-32 md:h-32 rounded-full border-4 border-gray-200" />
-              <Typography variant="h6" className="font-semibold mt-2">{member.name}</Typography>
-              <Typography variant="body2" className="text-gray-500">{member.role}</Typography>
-              <Typography variant="body2" className="text-gray-400">{member.title}</Typography>
-            </div>
-          ))}
-        </div>
-
-        {/* Join Us Section */}
-        <div className="flex flex-col items-center mt-8">
-          <div style={{backgroundColor: "#049a9b"}} className=" text-white font-bold rounded-full w-32 h-32 flex items-center justify-center text-xl">
-            See yourself here?
-          </div>
-          <Button 
-          onClick={()=>navigate("/We Are Hiring")}
-            variant="outlined" 
-            sx={{ mt: 2, borderColor: "#049a9b", color: "#049a9b", "&:hover": { backgroundColor: "#ffe5b4" } }}
-          >
-            Join Us!
-          </Button>
-        </div>
+      
       </div>
 
       {/* In The Spotlight Section */}
@@ -138,53 +109,7 @@ const HeroSection = () => {
         </div>
 
         <div className="px-6 md:px-20 py-10 bg-white">
-      <Grid container spacing={4} alignItems="center">
-        {/* Left: Image */}
-        <Grid item xs={12} md={6} className="flex justify-center">
-          <img
-            src="./images/takeoff.PNG"
-            alt="53 Takeoffs Logo"
-            className="w-64 md:w-80"
-          />
-        </Grid>
-
-        {/* Right: Content */}
-        <Grid item xs={12} md={6}>
-          <Typography variant="h4" className="font-bold mb-2">
-            Building{" "}
-            <span className="text-yellow-500">
-              53 Takeoffs (53TO)
-            </span>
-          </Typography>
-          <Typography variant="subtitle1" className="text-gray-600 mb-6">
-            Taking Off Travel Experiences &amp; Technology to New Heights
-          </Typography>
-
-          <ul className="list-disc pl-5 space-y-4 text-gray-800 text-left">
-            <li>
-              <span className="font-bold text-yellow-500">
-                53 Takeoffs (53TO)
-              </span>
-              , is a house of digital-first travel brands, focusing on becoming
-              a powerful travel conglomerate by growing its tours vertical and
-              incubating new travel brands.
-            </li>
-            <li>
-              Currently catering to customers across 75+ countries, the firm is
-              leveraging its proficiency in online travel, technology, consumer
-              understanding and distribution. One thing that remains consistent
-              across its brands is delivering the best travel experiences for
-              the customers. The brands which are run as of now include
-              Fast Booking Anytime, Couple Escapes, Rare Safaris and MyTravelPass.
-            </li>
-            <li>
-              53TO is set to become a multi-billion dollar travel conglomerate
-              in the next 5 years, with a mission to create 100+ sizable travel
-              brands across the globe by 2027.
-            </li>
-          </ul>
-        </Grid>
-      </Grid>
+      
     </div>
 
     <div className="bg-gray-100 py-16 px-4 md:px-20 rounded-2xl mt-16">
