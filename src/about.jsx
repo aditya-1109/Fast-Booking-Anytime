@@ -43,12 +43,11 @@ const HeroSection = () => {
       <div className="flex flex-col md:flex-row items-center justify-center bg-gray-100 px-6 md:px-20 py-10">
         <div className="flex flex-col justify-center md:w-1/2 text-center md:text-left">
           <Typography variant="h3" className="font-bold leading-tight text-gray-800">
-            Our <span style={{color: "#049a9b"}}>Mission</span>
+            About <span style={{color: "#049a9b"}}>Us</span>
           </Typography>
           <Typography variant="body1" className="text-gray-600 mt-4">
-            At Fast Booking Anytime, we're on a grand quest to transform the landscape of travel experiences.
-            Our aspiration goes beyond destinations—we endeavor to spark passion, carve everlasting memories,
-            and lead the way in crafting adventures that echo in the hearts of every explorer.
+          Welcome to Fast Booking Anytime, your trusted partner in travel for over 8 years. With a proud legacy of delivering exceptional travel experiences, we have served 15,000+ happy customers and continue to grow through trust, value, and a commitment to excellence.
+
           </Typography>
         </div>
         <div className="w-full md:w-1/2 flex justify-center mt-8 md:mt-0">
@@ -58,63 +57,107 @@ const HeroSection = () => {
 
       {/* Architects of Experiences Section */}
       <div className="bg-white px-6 md:px-20 py-10 text-center">
-        <Typography variant="h3" className="font-bold leading-tight" sx={{color: "grey", fontSize: "30px", fontWeight: "800", textAlign: "left"}}>
-          Meet the <span style={{color: "#049a9b"}}>Architects of Experiences</span>
-        </Typography>
-        <Typography variant="body1" className="text-gray-600 text-left mt-2">
-          We are a power-packed tribe of <span className="font-bold" style={{color: "#049a9b"}}>800+</span> extraordinarily talented & passionate professionals.
-        </Typography>
+  <Typography
+    variant="h3"
+    className="font-bold leading-tight"
+    sx={{
+      color: "grey",
+      fontSize: "30px",
+      fontWeight: "800",
+      textAlign: "center",
+    }}
+  >
+    Our <span style={{ color: "#049a9b" }}>Founder</span>
+  </Typography>
 
-      
-      </div>
+  <img
+    src="/images/founder.jpg"
+    alt="Founder & CEO"
+    style={{ width: "200px" }}
+    className="mx-auto my-4"
+  />
+
+  <Typography
+    variant="h5"
+    className="font-bold leading-tight"
+    sx={{
+      color: "grey",
+      fontSize: "20px",
+      fontWeight: "500",
+      textAlign: "center",
+    }}
+  >
+    Mr. Bala Saxena
+  </Typography>
+
+  <Typography variant="body1" className="text-gray-600 text-center mt-2">
+    our visionary CEO
+  </Typography>
+</div>
+
 
       {/* In The Spotlight Section */}
       <div className="bg-gray-100 px-6 md:px-20 py-10">
         <Typography variant="h3" className="font-bold leading-tight text-center" sx={{color: "black"}}>
-          In The <span style={{color: "#049a9b"}}>Spotlight</span>
+          Our <span style={{color: "#049a9b"}}>Services</span>
         </Typography>
         <Typography variant="body1" className="text-gray-600 text-center mt-2">
-          Explore What the World is Saying About Our Adventures and Experiences
+        Fast Booking Anytime was established with a clear mission — to make travel easy, affordable, and personalized. Today, we specialize in a wide range of travel services including:
+
+
         </Typography>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
-          {[
-            {
-              logo: "THE WEEK",
-              title: "A Tale of Success: 53 Takeoffs Organic Growth to Fast Booking Anytime Funding Saga",
-              description:
-                "53Takeoffs soared to become India’s leading multi-day tours company within three years, serving 800,000+ travelers in 2023. Reporting a turnover of 500+ crores & a 2.5x surge from the previous year, they also reclaimed control of their vision by buying back investor shares in Fast Booking Anytime.",
-            },
-            {
-              logo: "mint",
-              title: "An Audacious Journey of Fast Booking Anytime & 53 TakeOffs!",
-              description:
-                "This is the journey of a dynamic company whose post-COVID growth skyrocketed, expanding 8X from pre-pandemic days & its team size surged from 150 to 900. Fast Booking Anytime and 53 TakeOffs broadened their product lines, eyeing multi-billion-dollar status, 100 global brands & targeting 1000+ crores revenue in 2024.",
-            },
-            {
-              logo: "The Telegraph online",
-              title: "Fast Booking Anytime Trends to be One of the Most Popular Platforms to Book Tours",
-              description:
-                "Fast Booking Anytime has emerged as one of the leading platforms for booking tours, captivating travelers worldwide. Offering a vast array of handpicked tours and activities, the platform’s seamless user interface, secure payment system, and comprehensive customer support today ensure a hassle-free trip booking experience.",
-            },
-          ].map((item, index) => (
-            <Card key={index} className="shadow-lg">
-              <CardContent>
-                <Typography variant="h6" className="font-bold text-gray-800">{item.logo}</Typography>
-                <Typography variant="subtitle1" className="font-semibold mt-2">{item.title}</Typography>
-                <Typography variant="body2" className="text-gray-600 mt-2">{item.description}</Typography>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
+  {[
+    {
+      logo: "Luxury Holiday Packages",
+      title: "Luxury Escapes Redefined: Fast Booking Anytime's Rise in Premium Holiday Experiences",
+      description:
+        "Fast Booking Anytime has transformed the luxury travel segment by curating exclusive holiday packages that blend comfort, style, and personalized service. With 5-star accommodations, elite itineraries, and white-glove support, the company is setting a new benchmark in premium travel across India and abroad.",
+    },
+    {
+      logo: "Five-Star Hotel Bookings",
+      title: "Where Comfort Meets Class: Revolutionizing Five-Star Hotel Bookings",
+      description:
+        "Fast Booking Anytime has streamlined the process of booking five-star hotels with unbeatable deals, real-time availability, and personalized concierge service. Trusted by thousands of luxury travelers, the platform partners with top hotel chains worldwide to deliver unmatched stay experiences.",
+    },
+    {
+      logo: "Domestic and International Tour Packages",
+      title: "Globetrotting Made Easy: Fast Booking Anytime’s Tour Packages Take Off",
+      description:
+        "From the beaches of Bali to the palaces of Rajasthan, Fast Booking Anytime offers curated domestic and international tour packages for every kind of traveler. With flexible itineraries, expert guides, and exceptional value, they make world-class travel accessible and unforgettable.",
+    },
+    {
+      logo: "Group Tours for Students and Corporate",
+      title: "Empowering Group Travel: Fast Booking Anytime Leads in Student & Corporate Tours",
+      description:
+        "Specializing in large group coordination, Fast Booking Anytime delivers seamless travel planning for student excursions and corporate retreats. With cost-effective packages, safety-first planning, and tailored experiences, they’ve become the go-to partner for group travel in India and beyond.",
+    }
+  ].map((item, index) => (
+    <Card key={index} className="shadow-lg w-full">
+      <CardContent>
+        <Typography variant="h6" className="font-bold text-gray-800">
+          {item.logo}
+        </Typography>
+        <Typography variant="subtitle1" className="font-semibold mt-2">
+          {item.title}
+        </Typography>
+        <Typography variant="body2" className="text-gray-600 mt-2">
+          {item.description}
+        </Typography>
+      </CardContent>
+    </Card>
+  ))}
+</div>
 
-        <div className="px-6 md:px-20 py-10 bg-white">
+
       
-    </div>
 
     <div className="bg-gray-100 py-16 px-4 md:px-20 rounded-2xl mt-16">
       
-
+    <Typography variant="h5" className="font-semibold mb-10 uppercase" sx={{color:"#049a9b", fontWeight: "700", fontSize: "30px"}}>
+        Visitors Reviews Section
+      </Typography>
       <VisitorReviews />
     </div>
   
@@ -143,31 +186,29 @@ const HeroSection = () => {
       </Grid>
 
       {/* CTA Section */}
-      <div className="bg-gray-100 mt-16 py-12 px-6 rounded-lg">
-        <Typography
-          variant="h5"
-          className="font-bold mb-4 text-gray-800"
-        >
-          Let’s Build the Future of Travel,{" "}
-          <span style={{color: "#049a9b"}}>TOGETHER!</span>
-        </Typography>
-        <Typography className="text-gray-600 max-w-3xl mx-auto mb-6">
-          Fast Booking Anytime is not just a career opportunity; it is the breeding
-          ground for fresh ideas, ambitious individuals, fast-paced culture &
-          unrestricted growth. If you're ready to discover your potential, make
-          a difference, and join a thrilling professional journey – choose us!
-          Click the button crafted just for you, whether you're drawn to
-          marketing, sales, tech or beyond—your adventure awaits!
-        </Typography>
-        <Button
-          variant="contained"
-          style={{backgroundColor: "#049a9b"}}
-          onClick={()=>navigate("/We Are Hiring")}
-          className="text-white px-6 py-2 rounded-lg shadow-md hover:shadow-lg transition-all"
-        >
-          Join Our team!
-        </Button>
-      </div>
+      <div className="bg-gray-100 mt-16 py-12 px-6 rounded-lg flex flex-col items-center text-center">
+  <Typography
+    variant="h5"
+    className="font-bold mb-4 text-gray-800"
+  >
+    Let us take you{" "}
+    <span style={{ color: "#049a9b" }}>places!</span>
+  </Typography>
+
+  <Typography className="text-gray-600 max-w-3xl mb-6">
+    Whether you're planning a family vacation, a business retreat, or a large student tour, we ensure seamless coordination, unbeatable prices, and personalized support — without the wait. Our dedicated team takes pride in creating tailored travel experiences that match your needs and budget.
+  </Typography>
+
+  <Button
+    variant="contained"
+    style={{ backgroundColor: "#049a9b" }}
+    onClick={() => navigate("/We Are Hiring")}
+    className="text-white px-6 py-2 rounded-lg shadow-md hover:shadow-lg transition-all"
+  >
+    Join Our team!
+  </Button>
+</div>
+
     </div>
       </div>
     </div>
